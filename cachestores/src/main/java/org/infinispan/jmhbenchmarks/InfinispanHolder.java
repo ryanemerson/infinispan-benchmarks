@@ -31,7 +31,7 @@ import io.reactivex.Flowable;
 @State(Scope.Benchmark)
 public class InfinispanHolder {
 
-	@Param({ "SINGLE", "SOFT_INDEX", "ROCKS" })
+	@Param({ "SINGLE", "ROCKS" })
 	private StoreType storeType;
 
 	@Param({ "true", "false" })
