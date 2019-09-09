@@ -1,0 +1,3311 @@
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 0.00% complete, ETA 00:32:00
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:03:50 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:03:50 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+157568068.948 ops/s
+# Warmup Iteration   2: 160473675.240 ops/s
+# Warmup Iteration   3: 142800463.663 ops/s
+# Warmup Iteration   4: 140703276.942 ops/s
+# Warmup Iteration   5: 141786959.784 ops/s
+# Warmup Iteration   6: 142422368.525 ops/s
+# Warmup Iteration   7: 143372200.292 ops/s
+# Warmup Iteration   8: 143134678.629 ops/s
+# Warmup Iteration   9: 142097083.195 ops/s
+# Warmup Iteration  10: 143858919.007 ops/s
+# Warmup Iteration  11: 141174039.041 ops/s
+# Warmup Iteration  12: 142978526.362 ops/s
+# Warmup Iteration  13: 141866926.873 ops/s
+# Warmup Iteration  14: 142661471.663 ops/s
+# Warmup Iteration  15: 142883637.830 ops/s
+# Warmup Iteration  16: 142572960.957 ops/s
+# Warmup Iteration  17: 143024375.101 ops/s
+# Warmup Iteration  18: 142938756.338 ops/s
+# Warmup Iteration  19: 141066067.733 ops/s
+# Warmup Iteration  20: 138850189.112 ops/s
+Iteration   1: 140926052.318 ops/s
+Iteration   2: 142559384.764 ops/s
+Iteration   3: 143951469.501 ops/s
+Iteration   4: 142112227.424 ops/s
+Iteration   5: 144114712.237 ops/s
+Iteration   6: 139252855.509 ops/s
+Iteration   7: 143043097.336 ops/s
+Iteration   8: 143261377.872 ops/s
+Iteration   9: 141246219.262 ops/s
+Iteration  10: 140802487.226 ops/s
+Iteration  11: 142348982.154 ops/s
+Iteration  12: 141449740.341 ops/s
+Iteration  13: 143120784.979 ops/s
+Iteration  14: 140528689.590 ops/s
+Iteration  15: 138877387.167 ops/s
+Iteration  16: 138336868.487 ops/s
+Iteration  17: 139998340.452 ops/s
+Iteration  18: 142500178.586 ops/s
+Iteration  19: 139822569.643 ops/s
+Iteration  20: 139666040.897 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  141395973.287 ±(99.9%) 1492785.711 ops/s [Average]
+  (min, avg, max) = (138336868.487, 141395973.287, 144114712.237), stdev = 1719094.245
+  CI (99.9%): [139903187.576, 142888758.998] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 2.08% complete, ETA 00:35:17
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:04:35 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:04:35 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+158796017.843 ops/s
+# Warmup Iteration   2: 164460568.024 ops/s
+# Warmup Iteration   3: 142347000.899 ops/s
+# Warmup Iteration   4: 141982212.217 ops/s
+# Warmup Iteration   5: 140799789.752 ops/s
+# Warmup Iteration   6: 139520564.680 ops/s
+# Warmup Iteration   7: 139593065.636 ops/s
+# Warmup Iteration   8: 141527022.517 ops/s
+# Warmup Iteration   9: 139144417.684 ops/s
+# Warmup Iteration  10: 140138125.625 ops/s
+# Warmup Iteration  11: 140952758.861 ops/s
+# Warmup Iteration  12: 139671738.535 ops/s
+# Warmup Iteration  13: 142338357.626 ops/s
+# Warmup Iteration  14: 141110353.165 ops/s
+# Warmup Iteration  15: 140639218.611 ops/s
+# Warmup Iteration  16: 141143934.285 ops/s
+# Warmup Iteration  17: 141538140.113 ops/s
+# Warmup Iteration  18: 140457886.387 ops/s
+# Warmup Iteration  19: 140979872.824 ops/s
+# Warmup Iteration  20: 141171074.864 ops/s
+Iteration   1: 141292078.768 ops/s
+Iteration   2: 140364542.578 ops/s
+Iteration   3: 140670165.233 ops/s
+Iteration   4: 139035583.098 ops/s
+Iteration   5: 140349225.672 ops/s
+Iteration   6: 142472166.071 ops/s
+Iteration   7: 142891276.257 ops/s
+Iteration   8: 142736569.841 ops/s
+Iteration   9: 141818583.910 ops/s
+Iteration  10: 144798640.028 ops/s
+Iteration  11: 143942434.367 ops/s
+Iteration  12: 142222442.950 ops/s
+Iteration  13: 142085034.431 ops/s
+Iteration  14: 141160740.670 ops/s
+Iteration  15: 140836479.912 ops/s
+Iteration  16: 142716458.226 ops/s
+Iteration  17: 144571232.479 ops/s
+Iteration  18: 144099431.656 ops/s
+Iteration  19: 142428635.735 ops/s
+Iteration  20: 141015617.165 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  142075366.952 ±(99.9%) 1326557.777 ops/s [Average]
+  (min, avg, max) = (139035583.098, 142075366.952, 144798640.028), stdev = 1527665.909
+  CI (99.9%): [140748809.175, 143401924.729] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 4.17% complete, ETA 00:34:32
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:05:20 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:05:20 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+158798961.046 ops/s
+# Warmup Iteration   2: 161845765.805 ops/s
+# Warmup Iteration   3: 138965249.409 ops/s
+# Warmup Iteration   4: 139181623.306 ops/s
+# Warmup Iteration   5: 140634565.465 ops/s
+# Warmup Iteration   6: 142395362.659 ops/s
+# Warmup Iteration   7: 142673145.166 ops/s
+# Warmup Iteration   8: 141228018.165 ops/s
+# Warmup Iteration   9: 145265828.586 ops/s
+# Warmup Iteration  10: 143384176.946 ops/s
+# Warmup Iteration  11: 141003208.859 ops/s
+# Warmup Iteration  12: 141338820.977 ops/s
+# Warmup Iteration  13: 140564825.510 ops/s
+# Warmup Iteration  14: 139414538.006 ops/s
+# Warmup Iteration  15: 142498455.261 ops/s
+# Warmup Iteration  16: 142340059.433 ops/s
+# Warmup Iteration  17: 143630802.981 ops/s
+# Warmup Iteration  18: 143237049.366 ops/s
+# Warmup Iteration  19: 143526316.729 ops/s
+# Warmup Iteration  20: 142022302.456 ops/s
+Iteration   1: 144437015.060 ops/s
+Iteration   2: 142124985.544 ops/s
+Iteration   3: 142480706.015 ops/s
+Iteration   4: 141475058.720 ops/s
+Iteration   5: 140616129.459 ops/s
+Iteration   6: 141129888.579 ops/s
+Iteration   7: 142628082.857 ops/s
+Iteration   8: 144569405.370 ops/s
+Iteration   9: 142984653.427 ops/s
+Iteration  10: 144656705.854 ops/s
+Iteration  11: 143125462.282 ops/s
+Iteration  12: 141624563.296 ops/s
+Iteration  13: 139940664.066 ops/s
+Iteration  14: 141241685.617 ops/s
+Iteration  15: 143240397.732 ops/s
+Iteration  16: 143872762.337 ops/s
+Iteration  17: 144198098.729 ops/s
+Iteration  18: 144898520.415 ops/s
+Iteration  19: 144119489.939 ops/s
+Iteration  20: 144160355.333 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  142876231.531 ±(99.9%) 1298163.532 ops/s [Average]
+  (min, avg, max) = (139940664.066, 142876231.531, 144898520.415), stdev = 1494967.054
+  CI (99.9%): [141578067.999, 144174395.064] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 6.25% complete, ETA 00:39:40
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:06:29 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:06:29 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+160387048.417 ops/s
+# Warmup Iteration   2: 161314435.188 ops/s
+# Warmup Iteration   3: 141245994.102 ops/s
+# Warmup Iteration   4: 141983317.497 ops/s
+# Warmup Iteration   5: 142087194.403 ops/s
+# Warmup Iteration   6: 141875513.122 ops/s
+# Warmup Iteration   7: 143229021.305 ops/s
+# Warmup Iteration   8: 141000946.627 ops/s
+# Warmup Iteration   9: 139953273.880 ops/s
+# Warmup Iteration  10: 141054702.611 ops/s
+# Warmup Iteration  11: 138500109.197 ops/s
+# Warmup Iteration  12: 140047460.643 ops/s
+# Warmup Iteration  13: 141483050.962 ops/s
+# Warmup Iteration  14: 140435137.332 ops/s
+# Warmup Iteration  15: 140011627.632 ops/s
+# Warmup Iteration  16: 141406218.636 ops/s
+# Warmup Iteration  17: 140823693.977 ops/s
+# Warmup Iteration  18: 141550133.130 ops/s
+# Warmup Iteration  19: 142588553.858 ops/s
+# Warmup Iteration  20: 141300503.070 ops/s
+Iteration   1: 140626689.535 ops/s
+Iteration   2: 140751338.948 ops/s
+Iteration   3: 142984908.683 ops/s
+Iteration   4: 142842704.813 ops/s
+Iteration   5: 142948118.155 ops/s
+Iteration   6: 144606804.747 ops/s
+Iteration   7: 144601223.645 ops/s
+Iteration   8: 143149276.086 ops/s
+Iteration   9: 141609031.112 ops/s
+Iteration  10: 142527193.500 ops/s
+Iteration  11: 141023213.751 ops/s
+Iteration  12: 142303629.909 ops/s
+Iteration  13: 143820742.500 ops/s
+Iteration  14: 144570497.400 ops/s
+Iteration  15: 143848840.249 ops/s
+Iteration  16: 144597205.109 ops/s
+Iteration  17: 145176753.288 ops/s
+Iteration  18: 143671797.206 ops/s
+Iteration  19: 142760556.948 ops/s
+Iteration  20: 143910135.617 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  143116533.060 ±(99.9%) 1172678.911 ops/s [Average]
+  (min, avg, max) = (140626689.535, 143116533.060, 145176753.288), stdev = 1350458.778
+  CI (99.9%): [141943854.149, 144289211.971] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 8.33% complete, ETA 00:40:52
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:07:33 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:07:33 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+162415028.267 ops/s
+# Warmup Iteration   2: 164950180.895 ops/s
+# Warmup Iteration   3: 143981227.981 ops/s
+# Warmup Iteration   4: 143399934.939 ops/s
+# Warmup Iteration   5: 143230785.607 ops/s
+# Warmup Iteration   6: 144394036.735 ops/s
+# Warmup Iteration   7: 145313116.453 ops/s
+# Warmup Iteration   8: 144316005.274 ops/s
+# Warmup Iteration   9: 143656864.380 ops/s
+# Warmup Iteration  10: 143482473.904 ops/s
+# Warmup Iteration  11: 143748630.718 ops/s
+# Warmup Iteration  12: 140950197.244 ops/s
+# Warmup Iteration  13: 142258361.063 ops/s
+# Warmup Iteration  14: 144477151.126 ops/s
+# Warmup Iteration  15: 143683464.130 ops/s
+# Warmup Iteration  16: 142169197.286 ops/s
+# Warmup Iteration  17: 141470692.420 ops/s
+# Warmup Iteration  18: 141781253.868 ops/s
+# Warmup Iteration  19: 143115439.925 ops/s
+# Warmup Iteration  20: 141818212.366 ops/s
+Iteration   1: 141206309.660 ops/s
+Iteration   2: 142234432.665 ops/s
+Iteration   3: 143003906.454 ops/s
+Iteration   4: 142176676.781 ops/s
+Iteration   5: 142563620.176 ops/s
+Iteration   6: 139136079.577 ops/s
+Iteration   7: 140416098.398 ops/s
+Iteration   8: 141166708.347 ops/s
+Iteration   9: 139694017.820 ops/s
+Iteration  10: 144323250.134 ops/s
+Iteration  11: 143985218.154 ops/s
+Iteration  12: 143483597.958 ops/s
+Iteration  13: 143507080.542 ops/s
+Iteration  14: 142818396.589 ops/s
+Iteration  15: 143522347.210 ops/s
+Iteration  16: 144118220.387 ops/s
+Iteration  17: 143861091.450 ops/s
+Iteration  18: 143646296.857 ops/s
+Iteration  19: 143280588.755 ops/s
+Iteration  20: 143120426.017 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  142563218.197 ±(99.9%) 1302904.937 ops/s [Average]
+  (min, avg, max) = (139136079.577, 142563218.197, 144323250.134), stdev = 1500427.263
+  CI (99.9%): [141260313.260, 143866123.133] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 10.42% complete, ETA 00:38:21
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:08:18 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:08:18 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+160515611.665 ops/s
+# Warmup Iteration   2: 166515747.083 ops/s
+# Warmup Iteration   3: 109935356.206 ops/s
+# Warmup Iteration   4: 110687297.943 ops/s
+# Warmup Iteration   5: 109716702.272 ops/s
+# Warmup Iteration   6: 109685049.225 ops/s
+# Warmup Iteration   7: 110470795.702 ops/s
+# Warmup Iteration   8: 110518518.614 ops/s
+# Warmup Iteration   9: 109648835.712 ops/s
+# Warmup Iteration  10: 111492770.277 ops/s
+# Warmup Iteration  11: 109931761.001 ops/s
+# Warmup Iteration  12: 111585097.366 ops/s
+# Warmup Iteration  13: 110695990.222 ops/s
+# Warmup Iteration  14: 109753442.763 ops/s
+# Warmup Iteration  15: 111669250.395 ops/s
+# Warmup Iteration  16: 110319407.826 ops/s
+# Warmup Iteration  17: 144336835.363 ops/s
+# Warmup Iteration  18: 143535424.323 ops/s
+# Warmup Iteration  19: 144218416.769 ops/s
+# Warmup Iteration  20: 143885499.477 ops/s
+Iteration   1: 144058666.980 ops/s
+Iteration   2: 144792517.616 ops/s
+Iteration   3: 143687913.313 ops/s
+Iteration   4: 144515412.654 ops/s
+Iteration   5: 143418960.873 ops/s
+Iteration   6: 143391683.002 ops/s
+Iteration   7: 144228311.339 ops/s
+Iteration   8: 141970175.705 ops/s
+Iteration   9: 142631048.254 ops/s
+Iteration  10: 142656638.902 ops/s
+Iteration  11: 143463537.260 ops/s
+Iteration  12: 144669503.256 ops/s
+Iteration  13: 144939596.928 ops/s
+Iteration  14: 144836149.354 ops/s
+Iteration  15: 144736230.887 ops/s
+Iteration  16: 143171984.697 ops/s
+Iteration  17: 142320348.832 ops/s
+Iteration  18: 143021022.913 ops/s
+Iteration  19: 142159228.064 ops/s
+Iteration  20: 144463889.843 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  143656641.034 ±(99.9%) 848106.596 ops/s [Average]
+  (min, avg, max) = (141970175.705, 143656641.034, 144939596.928), stdev = 976680.817
+  CI (99.9%): [142808534.438, 144504747.629] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 12.50% complete, ETA 00:36:26
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:09:02 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:09:03 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+159050158.247 ops/s
+# Warmup Iteration   2: 160663441.978 ops/s
+# Warmup Iteration   3: 141022269.774 ops/s
+# Warmup Iteration   4: 139289672.781 ops/s
+# Warmup Iteration   5: 141128894.412 ops/s
+# Warmup Iteration   6: 141105130.368 ops/s
+# Warmup Iteration   7: 141843145.967 ops/s
+# Warmup Iteration   8: 142130131.543 ops/s
+# Warmup Iteration   9: 144178094.045 ops/s
+# Warmup Iteration  10: 143571974.974 ops/s
+# Warmup Iteration  11: 144391284.350 ops/s
+# Warmup Iteration  12: 144023045.233 ops/s
+# Warmup Iteration  13: 144840069.742 ops/s
+# Warmup Iteration  14: 143713194.868 ops/s
+# Warmup Iteration  15: 143783653.126 ops/s
+# Warmup Iteration  16: 142207881.956 ops/s
+# Warmup Iteration  17: 140908558.831 ops/s
+# Warmup Iteration  18: 141021231.466 ops/s
+# Warmup Iteration  19: 140981226.573 ops/s
+# Warmup Iteration  20: 142014693.098 ops/s
+Iteration   1: 141150096.979 ops/s
+Iteration   2: 140487311.153 ops/s
+Iteration   3: 140848528.012 ops/s
+Iteration   4: 140827711.725 ops/s
+Iteration   5: 140376881.769 ops/s
+Iteration   6: 141014761.066 ops/s
+Iteration   7: 138370649.312 ops/s
+Iteration   8: 138497499.895 ops/s
+Iteration   9: 139250187.341 ops/s
+Iteration  10: 140067034.605 ops/s
+Iteration  11: 137713928.894 ops/s
+Iteration  12: 141298921.501 ops/s
+Iteration  13: 141695884.669 ops/s
+Iteration  14: 140660678.479 ops/s
+Iteration  15: 141670196.878 ops/s
+Iteration  16: 142169661.352 ops/s
+Iteration  17: 140760610.798 ops/s
+Iteration  18: 140023185.652 ops/s
+Iteration  19: 140642147.806 ops/s
+Iteration  20: 141088763.247 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  140430732.057 ±(99.9%) 1011984.941 ops/s [Average]
+  (min, avg, max) = (137713928.894, 140430732.057, 142169661.352), stdev = 1165403.364
+  CI (99.9%): [139418747.115, 141442716.998] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 14.58% complete, ETA 00:34:53
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:09:48 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:09:48 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+159334781.959 ops/s
+# Warmup Iteration   2: 157733133.940 ops/s
+# Warmup Iteration   3: 142534119.293 ops/s
+# Warmup Iteration   4: 139655980.564 ops/s
+# Warmup Iteration   5: 139815826.318 ops/s
+# Warmup Iteration   6: 140825933.531 ops/s
+# Warmup Iteration   7: 140491009.010 ops/s
+# Warmup Iteration   8: 143207026.942 ops/s
+# Warmup Iteration   9: 141662754.179 ops/s
+# Warmup Iteration  10: 141190589.627 ops/s
+# Warmup Iteration  11: 142561423.064 ops/s
+# Warmup Iteration  12: 140170209.710 ops/s
+# Warmup Iteration  13: 142231147.809 ops/s
+# Warmup Iteration  14: 141393900.496 ops/s
+# Warmup Iteration  15: 141483864.437 ops/s
+# Warmup Iteration  16: 141914696.943 ops/s
+# Warmup Iteration  17: 143137153.074 ops/s
+# Warmup Iteration  18: 141251468.042 ops/s
+# Warmup Iteration  19: 143260113.145 ops/s
+# Warmup Iteration  20: 143282918.010 ops/s
+Iteration   1: 142763169.606 ops/s
+Iteration   2: 139176659.236 ops/s
+Iteration   3: 141712875.919 ops/s
+Iteration   4: 143777158.281 ops/s
+Iteration   5: 142517528.057 ops/s
+Iteration   6: 144705286.605 ops/s
+Iteration   7: 141581431.831 ops/s
+Iteration   8: 143352747.877 ops/s
+Iteration   9: 143740414.302 ops/s
+Iteration  10: 143458158.145 ops/s
+Iteration  11: 144368546.949 ops/s
+Iteration  12: 143823942.373 ops/s
+Iteration  13: 141867996.435 ops/s
+Iteration  14: 139938644.062 ops/s
+Iteration  15: 140454830.050 ops/s
+Iteration  16: 140390377.348 ops/s
+Iteration  17: 142387057.883 ops/s
+Iteration  18: 139902453.756 ops/s
+Iteration  19: 141707609.435 ops/s
+Iteration  20: 140646436.155 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  142113666.215 ±(99.9%) 1421724.474 ops/s [Average]
+  (min, avg, max) = (139176659.236, 142113666.215, 144705286.605), stdev = 1637260.019
+  CI (99.9%): [140691941.741, 143535390.689] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 16.67% complete, ETA 00:33:33
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:10:33 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:10:33 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+154996353.829 ops/s
+# Warmup Iteration   2: 151032271.548 ops/s
+# Warmup Iteration   3: 142277429.616 ops/s
+# Warmup Iteration   4: 141952701.435 ops/s
+# Warmup Iteration   5: 140537737.397 ops/s
+# Warmup Iteration   6: 142090217.470 ops/s
+# Warmup Iteration   7: 142615408.891 ops/s
+# Warmup Iteration   8: 141707238.691 ops/s
+# Warmup Iteration   9: 143475272.944 ops/s
+# Warmup Iteration  10: 141386993.075 ops/s
+# Warmup Iteration  11: 140888036.513 ops/s
+# Warmup Iteration  12: 140308535.475 ops/s
+# Warmup Iteration  13: 141298739.269 ops/s
+# Warmup Iteration  14: 140415808.713 ops/s
+# Warmup Iteration  15: 141780623.432 ops/s
+# Warmup Iteration  16: 142450679.527 ops/s
+# Warmup Iteration  17: 142318463.006 ops/s
+# Warmup Iteration  18: 141267682.247 ops/s
+# Warmup Iteration  19: 138406320.375 ops/s
+# Warmup Iteration  20: 141382713.447 ops/s
+Iteration   1: 140785960.570 ops/s
+Iteration   2: 141805095.542 ops/s
+Iteration   3: 141382975.402 ops/s
+Iteration   4: 140294579.414 ops/s
+Iteration   5: 140766755.724 ops/s
+Iteration   6: 140850575.191 ops/s
+Iteration   7: 140262101.501 ops/s
+Iteration   8: 140335311.680 ops/s
+Iteration   9: 139000145.468 ops/s
+Iteration  10: 139652065.824 ops/s
+Iteration  11: 141744737.571 ops/s
+Iteration  12: 143141363.044 ops/s
+Iteration  13: 141276083.835 ops/s
+Iteration  14: 143646257.229 ops/s
+Iteration  15: 140106840.748 ops/s
+Iteration  16: 139775508.060 ops/s
+Iteration  17: 139691262.668 ops/s
+Iteration  18: 139125781.608 ops/s
+Iteration  19: 141450285.865 ops/s
+Iteration  20: 143092226.172 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  140909295.656 ±(99.9%) 1133508.782 ops/s [Average]
+  (min, avg, max) = (139000145.468, 140909295.656, 143646257.229), stdev = 1305350.399
+  CI (99.9%): [139775786.874, 142042804.438] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 18.75% complete, ETA 00:32:36
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:11:22 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:11:22 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+158032064.630 ops/s
+# Warmup Iteration   2: 162964279.679 ops/s
+# Warmup Iteration   3: 140599031.537 ops/s
+# Warmup Iteration   4: 140266646.670 ops/s
+# Warmup Iteration   5: 139946772.444 ops/s
+# Warmup Iteration   6: 140281793.122 ops/s
+# Warmup Iteration   7: 141028101.189 ops/s
+# Warmup Iteration   8: 139645981.129 ops/s
+# Warmup Iteration   9: 139600157.365 ops/s
+# Warmup Iteration  10: 141317419.520 ops/s
+# Warmup Iteration  11: 141741501.486 ops/s
+# Warmup Iteration  12: 141221381.249 ops/s
+# Warmup Iteration  13: 140345535.147 ops/s
+# Warmup Iteration  14: 142105859.664 ops/s
+# Warmup Iteration  15: 140884995.770 ops/s
+# Warmup Iteration  16: 143139344.507 ops/s
+# Warmup Iteration  17: 84589954.692 ops/s
+# Warmup Iteration  18: 84330164.042 ops/s
+# Warmup Iteration  19: 84823126.863 ops/s
+# Warmup Iteration  20: 83567536.120 ops/s
+Iteration   1: 83726914.178 ops/s
+Iteration   2: 84032152.996 ops/s
+Iteration   3: 84982169.443 ops/s
+Iteration   4: 85385814.167 ops/s
+Iteration   5: 85402094.682 ops/s
+Iteration   6: 85846609.726 ops/s
+Iteration   7: 85845699.655 ops/s
+Iteration   8: 85981708.843 ops/s
+Iteration   9: 86040657.874 ops/s
+Iteration  10: 84728191.248 ops/s
+Iteration  11: 84275337.480 ops/s
+Iteration  12: 85472672.866 ops/s
+Iteration  13: 85443429.450 ops/s
+Iteration  14: 85869845.922 ops/s
+Iteration  15: 85317779.231 ops/s
+Iteration  16: 85724498.663 ops/s
+Iteration  17: 85879263.186 ops/s
+Iteration  18: 85341408.900 ops/s
+Iteration  19: 84325589.327 ops/s
+Iteration  20: 84751889.319 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  85218686.358 ±(99.9%) 604187.117 ops/s [Average]
+  (min, avg, max) = (83726914.178, 85218686.358, 86040657.874), stdev = 695782.782
+  CI (99.9%): [84614499.241, 85822873.475] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 20.83% complete, ETA 00:31:42
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:12:11 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:12:11 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+158039073.928 ops/s
+# Warmup Iteration   2: 161591796.799 ops/s
+# Warmup Iteration   3: 139949952.106 ops/s
+# Warmup Iteration   4: 140528749.684 ops/s
+# Warmup Iteration   5: 142365792.255 ops/s
+# Warmup Iteration   6: 142948402.359 ops/s
+# Warmup Iteration   7: 142855542.126 ops/s
+# Warmup Iteration   8: 140401043.355 ops/s
+# Warmup Iteration   9: 140664440.992 ops/s
+# Warmup Iteration  10: 140271634.099 ops/s
+# Warmup Iteration  11: 140006689.709 ops/s
+# Warmup Iteration  12: 141844464.707 ops/s
+# Warmup Iteration  13: 140957224.719 ops/s
+# Warmup Iteration  14: 139852978.059 ops/s
+# Warmup Iteration  15: 141558241.504 ops/s
+# Warmup Iteration  16: 142283181.198 ops/s
+# Warmup Iteration  17: 139931079.125 ops/s
+# Warmup Iteration  18: 141835574.357 ops/s
+# Warmup Iteration  19: 141357579.254 ops/s
+# Warmup Iteration  20: 140505828.176 ops/s
+Iteration   1: 140608428.532 ops/s
+Iteration   2: 140520531.640 ops/s
+Iteration   3: 141696924.115 ops/s
+Iteration   4: 140979335.121 ops/s
+Iteration   5: 142347036.846 ops/s
+Iteration   6: 142980700.778 ops/s
+Iteration   7: 143173323.105 ops/s
+Iteration   8: 141409964.273 ops/s
+Iteration   9: 139531648.630 ops/s
+Iteration  10: 138913338.396 ops/s
+Iteration  11: 138813683.265 ops/s
+Iteration  12: 141778307.164 ops/s
+Iteration  13: 141130523.126 ops/s
+Iteration  14: 140225011.863 ops/s
+Iteration  15: 140515133.833 ops/s
+Iteration  16: 139840079.553 ops/s
+Iteration  17: 142412029.539 ops/s
+Iteration  18: 142957592.081 ops/s
+Iteration  19: 144497677.193 ops/s
+Iteration  20: 144669919.628 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  141450059.434 ±(99.9%) 1451254.514 ops/s [Average]
+  (min, avg, max) = (138813683.265, 141450059.434, 144669919.628), stdev = 1671266.856
+  CI (99.9%): [139998804.920, 142901313.948] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 22.92% complete, ETA 00:32:22
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:13:28 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:13:28 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+159687010.598 ops/s
+# Warmup Iteration   2: 163024071.686 ops/s
+# Warmup Iteration   3: 136714444.772 ops/s
+# Warmup Iteration   4: 136522130.695 ops/s
+# Warmup Iteration   5: 138474109.694 ops/s
+# Warmup Iteration   6: 137910183.207 ops/s
+# Warmup Iteration   7: 139931685.255 ops/s
+# Warmup Iteration   8: 140980428.307 ops/s
+# Warmup Iteration   9: 140503999.226 ops/s
+# Warmup Iteration  10: 140105415.085 ops/s
+# Warmup Iteration  11: 139968275.263 ops/s
+# Warmup Iteration  12: 140259877.611 ops/s
+# Warmup Iteration  13: 139024417.919 ops/s
+# Warmup Iteration  14: 140144742.566 ops/s
+# Warmup Iteration  15: 142118339.294 ops/s
+# Warmup Iteration  16: 142065575.177 ops/s
+# Warmup Iteration  17: 141747601.381 ops/s
+# Warmup Iteration  18: 140199128.646 ops/s
+# Warmup Iteration  19: 141664571.626 ops/s
+# Warmup Iteration  20: 141072546.008 ops/s
+Iteration   1: 141355356.717 ops/s
+Iteration   2: 141319851.564 ops/s
+Iteration   3: 141123114.525 ops/s
+Iteration   4: 140294931.030 ops/s
+Iteration   5: 139581103.488 ops/s
+Iteration   6: 141664055.313 ops/s
+Iteration   7: 140389174.732 ops/s
+Iteration   8: 140733428.950 ops/s
+Iteration   9: 140328935.750 ops/s
+Iteration  10: 141437685.484 ops/s
+Iteration  11: 140140425.865 ops/s
+Iteration  12: 139990689.673 ops/s
+Iteration  13: 138239470.507 ops/s
+Iteration  14: 140365618.824 ops/s
+Iteration  15: 138626088.500 ops/s
+Iteration  16: 138289630.097 ops/s
+Iteration  17: 138712169.595 ops/s
+Iteration  18: 136934646.966 ops/s
+Iteration  19: 138583581.086 ops/s
+Iteration  20: 138465702.958 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  139828783.081 ±(99.9%) 1155294.523 ops/s [Average]
+  (min, avg, max) = (136934646.966, 139828783.081, 141664055.313), stdev = 1330438.890
+  CI (99.9%): [138673488.559, 140984077.604] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 25.00% complete, ETA 00:32:38
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:14:43 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:14:43 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+154999631.452 ops/s
+# Warmup Iteration   2: 165242311.111 ops/s
+# Warmup Iteration   3: 143974174.242 ops/s
+# Warmup Iteration   4: 143627736.842 ops/s
+# Warmup Iteration   5: 143028931.255 ops/s
+# Warmup Iteration   6: 140079045.678 ops/s
+# Warmup Iteration   7: 141095556.958 ops/s
+# Warmup Iteration   8: 144024272.497 ops/s
+# Warmup Iteration   9: 143956996.415 ops/s
+# Warmup Iteration  10: 140048496.930 ops/s
+# Warmup Iteration  11: 142588294.238 ops/s
+# Warmup Iteration  12: 143754605.820 ops/s
+# Warmup Iteration  13: 142545510.395 ops/s
+# Warmup Iteration  14: 144236534.451 ops/s
+# Warmup Iteration  15: 143894272.596 ops/s
+# Warmup Iteration  16: 144587625.906 ops/s
+# Warmup Iteration  17: 144414975.704 ops/s
+# Warmup Iteration  18: 144033109.599 ops/s
+# Warmup Iteration  19: 142077311.324 ops/s
+# Warmup Iteration  20: 138846214.828 ops/s
+Iteration   1: 141175923.804 ops/s
+Iteration   2: 141362506.557 ops/s
+Iteration   3: 142122571.475 ops/s
+Iteration   4: 140829097.492 ops/s
+Iteration   5: 140160620.322 ops/s
+Iteration   6: 140282504.403 ops/s
+Iteration   7: 138218557.550 ops/s
+Iteration   8: 141279348.511 ops/s
+Iteration   9: 140362220.815 ops/s
+Iteration  10: 139820093.408 ops/s
+Iteration  11: 139446891.210 ops/s
+Iteration  12: 140047510.473 ops/s
+Iteration  13: 137029495.441 ops/s
+Iteration  14: 138851787.892 ops/s
+Iteration  15: 138815474.731 ops/s
+Iteration  16: 140378171.952 ops/s
+Iteration  17: 140000037.185 ops/s
+Iteration  18: 142346020.948 ops/s
+Iteration  19: 139993365.486 ops/s
+Iteration  20: 143558793.200 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  140304049.643 ±(99.9%) 1288409.992 ops/s [Average]
+  (min, avg, max) = (137029495.441, 140304049.643, 143558793.200), stdev = 1483734.863
+  CI (99.9%): [139015639.651, 141592459.635] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 27.08% complete, ETA 00:31:28
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:15:32 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:15:32 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+160106187.132 ops/s
+# Warmup Iteration   2: 164970272.077 ops/s
+# Warmup Iteration   3: 142674512.163 ops/s
+# Warmup Iteration   4: 142459348.104 ops/s
+# Warmup Iteration   5: 142226070.605 ops/s
+# Warmup Iteration   6: 141600343.234 ops/s
+# Warmup Iteration   7: 138253851.081 ops/s
+# Warmup Iteration   8: 139734719.318 ops/s
+# Warmup Iteration   9: 141062300.016 ops/s
+# Warmup Iteration  10: 141722617.887 ops/s
+# Warmup Iteration  11: 141536512.301 ops/s
+# Warmup Iteration  12: 141536400.786 ops/s
+# Warmup Iteration  13: 141013487.334 ops/s
+# Warmup Iteration  14: 141854725.806 ops/s
+# Warmup Iteration  15: 142684319.952 ops/s
+# Warmup Iteration  16: 143032217.383 ops/s
+# Warmup Iteration  17: 142468943.080 ops/s
+# Warmup Iteration  18: 143607564.688 ops/s
+# Warmup Iteration  19: 142414155.731 ops/s
+# Warmup Iteration  20: 141103323.129 ops/s
+Iteration   1: 141384652.720 ops/s
+Iteration   2: 141458299.659 ops/s
+Iteration   3: 142599011.308 ops/s
+Iteration   4: 139434883.076 ops/s
+Iteration   5: 142033188.862 ops/s
+Iteration   6: 144169568.290 ops/s
+Iteration   7: 143823381.459 ops/s
+Iteration   8: 141982400.075 ops/s
+Iteration   9: 140483508.015 ops/s
+Iteration  10: 140644195.056 ops/s
+Iteration  11: 141982449.170 ops/s
+Iteration  12: 143238174.236 ops/s
+Iteration  13: 141030211.617 ops/s
+Iteration  14: 141203578.665 ops/s
+Iteration  15: 141635324.693 ops/s
+Iteration  16: 141037625.279 ops/s
+Iteration  17: 141398067.349 ops/s
+Iteration  18: 141880998.900 ops/s
+Iteration  19: 141613556.853 ops/s
+Iteration  20: 141260050.115 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  141714656.270 ±(99.9%) 963549.448 ops/s [Average]
+  (min, avg, max) = (139434883.076, 141714656.270, 144169568.290), stdev = 1109624.977
+  CI (99.9%): [140751106.822, 142678205.718] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 29.17% complete, ETA 00:30:21
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:16:20 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:16:20 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+155485636.093 ops/s
+# Warmup Iteration   2: 164290344.315 ops/s
+# Warmup Iteration   3: 143770362.525 ops/s
+# Warmup Iteration   4: 141620814.175 ops/s
+# Warmup Iteration   5: 142143097.116 ops/s
+# Warmup Iteration   6: 142867510.622 ops/s
+# Warmup Iteration   7: 142578584.081 ops/s
+# Warmup Iteration   8: 142424337.074 ops/s
+# Warmup Iteration   9: 140548899.117 ops/s
+# Warmup Iteration  10: 141362530.687 ops/s
+# Warmup Iteration  11: 142218451.852 ops/s
+# Warmup Iteration  12: 144581299.030 ops/s
+# Warmup Iteration  13: 144413378.907 ops/s
+# Warmup Iteration  14: 142285009.442 ops/s
+# Warmup Iteration  15: 143636180.471 ops/s
+# Warmup Iteration  16: 142686582.394 ops/s
+# Warmup Iteration  17: 144248701.344 ops/s
+# Warmup Iteration  18: 143452517.763 ops/s
+# Warmup Iteration  19: 141843395.803 ops/s
+# Warmup Iteration  20: 141430196.592 ops/s
+Iteration   1: 143881654.010 ops/s
+Iteration   2: 143822084.694 ops/s
+Iteration   3: 142927015.930 ops/s
+Iteration   4: 144181841.603 ops/s
+Iteration   5: 143095283.655 ops/s
+Iteration   6: 142605451.773 ops/s
+Iteration   7: 142694000.628 ops/s
+Iteration   8: 144528559.834 ops/s
+Iteration   9: 143480893.773 ops/s
+Iteration  10: 140714995.920 ops/s
+Iteration  11: 143143386.230 ops/s
+Iteration  12: 143200892.853 ops/s
+Iteration  13: 143221928.684 ops/s
+Iteration  14: 141887172.895 ops/s
+Iteration  15: 139826546.459 ops/s
+Iteration  16: 138813100.434 ops/s
+Iteration  17: 141530298.262 ops/s
+Iteration  18: 142968784.313 ops/s
+Iteration  19: 142119417.710 ops/s
+Iteration  20: 142236842.450 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  142544007.605 ±(99.9%) 1247476.376 ops/s [Average]
+  (min, avg, max) = (138813100.434, 142544007.605, 144528559.834), stdev = 1436595.650
+  CI (99.9%): [141296531.229, 143791483.982] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 31.25% complete, ETA 00:29:19
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:17:10 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:17:10 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+158513944.791 ops/s
+# Warmup Iteration   2: 160299884.684 ops/s
+# Warmup Iteration   3: 111306330.177 ops/s
+# Warmup Iteration   4: 111655386.404 ops/s
+# Warmup Iteration   5: 111348605.485 ops/s
+# Warmup Iteration   6: 111792260.638 ops/s
+# Warmup Iteration   7: 112315901.497 ops/s
+# Warmup Iteration   8: 112328785.180 ops/s
+# Warmup Iteration   9: 112571216.198 ops/s
+# Warmup Iteration  10: 112383906.750 ops/s
+# Warmup Iteration  11: 111264509.356 ops/s
+# Warmup Iteration  12: 111432476.438 ops/s
+# Warmup Iteration  13: 111763576.075 ops/s
+# Warmup Iteration  14: 110660362.694 ops/s
+# Warmup Iteration  15: 110712145.532 ops/s
+# Warmup Iteration  16: 110303170.678 ops/s
+# Warmup Iteration  17: 142225209.016 ops/s
+# Warmup Iteration  18: 143684938.172 ops/s
+# Warmup Iteration  19: 144761955.868 ops/s
+# Warmup Iteration  20: 143331801.926 ops/s
+Iteration   1: 143371219.038 ops/s
+Iteration   2: 142431040.475 ops/s
+Iteration   3: 141418490.560 ops/s
+Iteration   4: 144301659.422 ops/s
+Iteration   5: 143038867.908 ops/s
+Iteration   6: 145056043.410 ops/s
+Iteration   7: 141643249.909 ops/s
+Iteration   8: 142994896.832 ops/s
+Iteration   9: 143618055.501 ops/s
+Iteration  10: 141846637.589 ops/s
+Iteration  11: 142461714.843 ops/s
+Iteration  12: 142400307.049 ops/s
+Iteration  13: 141979061.616 ops/s
+Iteration  14: 144514089.992 ops/s
+Iteration  15: 144226154.500 ops/s
+Iteration  16: 145146232.547 ops/s
+Iteration  17: 143373177.852 ops/s
+Iteration  18: 140935508.321 ops/s
+Iteration  19: 144954446.442 ops/s
+Iteration  20: 144991697.823 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testLoad":
+  143235127.582 ±(99.9%) 1155018.414 ops/s [Average]
+  (min, avg, max) = (140935508.321, 143235127.582, 145146232.547), stdev = 1330120.924
+  CI (99.9%): [142080109.167, 144390145.996] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 33.33% complete, ETA 00:28:21
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:18:01 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:18:01 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+49612.404 ops/s
+# Warmup Iteration   2: 51958.546 ops/s
+# Warmup Iteration   3: 53194.902 ops/s
+# Warmup Iteration   4: 54763.195 ops/s
+# Warmup Iteration   5: 54135.265 ops/s
+# Warmup Iteration   6: 54144.724 ops/s
+# Warmup Iteration   7: 55163.067 ops/s
+# Warmup Iteration   8: 48030.486 ops/s
+# Warmup Iteration   9: 55164.242 ops/s
+# Warmup Iteration  10: 54249.658 ops/s
+# Warmup Iteration  11: 53626.208 ops/s
+# Warmup Iteration  12: 53123.546 ops/s
+# Warmup Iteration  13: 55013.031 ops/s
+# Warmup Iteration  14: 54308.068 ops/s
+# Warmup Iteration  15: 51876.509 ops/s
+# Warmup Iteration  16: 54974.513 ops/s
+# Warmup Iteration  17: 54295.364 ops/s
+# Warmup Iteration  18: 54868.776 ops/s
+# Warmup Iteration  19: 53963.684 ops/s
+# Warmup Iteration  20: 55017.139 ops/s
+Iteration   1: 53437.690 ops/s
+Iteration   2: 55022.157 ops/s
+Iteration   3: 52004.566 ops/s
+Iteration   4: 53195.821 ops/s
+Iteration   5: 54406.886 ops/s
+Iteration   6: 55294.791 ops/s
+Iteration   7: 55573.012 ops/s
+Iteration   8: 51152.805 ops/s
+Iteration   9: 52648.850 ops/s
+Iteration  10: 53687.973 ops/s
+Iteration  11: 51198.766 ops/s
+Iteration  12: 51678.090 ops/s
+Iteration  13: 48918.123 ops/s
+Iteration  14: 49752.328 ops/s
+Iteration  15: 53575.575 ops/s
+Iteration  16: 52836.372 ops/s
+Iteration  17: 53651.865 ops/s
+Iteration  18: 51318.559 ops/s
+Iteration  19: 48241.258 ops/s
+Iteration  20: 52659.012 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  52512.725 ±(99.9%) 1748.201 ops/s [Average]
+  (min, avg, max) = (48241.258, 52512.725, 55573.012), stdev = 2013.230
+  CI (99.9%): [50764.524, 54260.926] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 35.42% complete, ETA 00:27:14
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:18:47 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:18:47 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+48402.506 ops/s
+# Warmup Iteration   2: 44829.408 ops/s
+# Warmup Iteration   3: 53111.938 ops/s
+# Warmup Iteration   4: 53393.131 ops/s
+# Warmup Iteration   5: 53257.627 ops/s
+# Warmup Iteration   6: 53407.374 ops/s
+# Warmup Iteration   7: 52500.932 ops/s
+# Warmup Iteration   8: 53026.907 ops/s
+# Warmup Iteration   9: 52609.098 ops/s
+# Warmup Iteration  10: 52079.216 ops/s
+# Warmup Iteration  11: 52273.958 ops/s
+# Warmup Iteration  12: 52537.994 ops/s
+# Warmup Iteration  13: 48597.586 ops/s
+# Warmup Iteration  14: 52521.056 ops/s
+# Warmup Iteration  15: 52512.128 ops/s
+# Warmup Iteration  16: 52105.699 ops/s
+# Warmup Iteration  17: 47403.380 ops/s
+# Warmup Iteration  18: 49508.666 ops/s
+# Warmup Iteration  19: 53005.654 ops/s
+# Warmup Iteration  20: 52272.527 ops/s
+Iteration   1: 51300.493 ops/s
+Iteration   2: 49606.696 ops/s
+Iteration   3: 52618.134 ops/s
+Iteration   4: 51892.783 ops/s
+Iteration   5: 52230.905 ops/s
+Iteration   6: 50629.579 ops/s
+Iteration   7: 47884.896 ops/s
+Iteration   8: 53652.992 ops/s
+Iteration   9: 52271.720 ops/s
+Iteration  10: 47978.446 ops/s
+Iteration  11: 53633.489 ops/s
+Iteration  12: 47925.564 ops/s
+Iteration  13: 53360.089 ops/s
+Iteration  14: 53184.247 ops/s
+Iteration  15: 52872.359 ops/s
+Iteration  16: 52860.410 ops/s
+Iteration  17: 53237.326 ops/s
+Iteration  18: 53541.544 ops/s
+Iteration  19: 53852.166 ops/s
+Iteration  20: 52690.305 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  51861.207 ±(99.9%) 1735.653 ops/s [Average]
+  (min, avg, max) = (47884.896, 51861.207, 53852.166), stdev = 1998.781
+  CI (99.9%): [50125.554, 53596.860] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 37.50% complete, ETA 00:26:11
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:19:33 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:19:33 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+36052.116 ops/s
+# Warmup Iteration   2: 35808.178 ops/s
+# Warmup Iteration   3: 32277.038 ops/s
+# Warmup Iteration   4: 35669.663 ops/s
+# Warmup Iteration   5: 35357.087 ops/s
+# Warmup Iteration   6: 35931.753 ops/s
+# Warmup Iteration   7: 33847.445 ops/s
+# Warmup Iteration   8: 34556.004 ops/s
+# Warmup Iteration   9: 34278.102 ops/s
+# Warmup Iteration  10: 34769.516 ops/s
+# Warmup Iteration  11: 34413.595 ops/s
+# Warmup Iteration  12: 34657.654 ops/s
+# Warmup Iteration  13: 34460.741 ops/s
+# Warmup Iteration  14: 34070.921 ops/s
+# Warmup Iteration  15: 34296.314 ops/s
+# Warmup Iteration  16: 33478.836 ops/s
+# Warmup Iteration  17: 31650.435 ops/s
+# Warmup Iteration  18: 33490.372 ops/s
+# Warmup Iteration  19: 33332.575 ops/s
+# Warmup Iteration  20: 31007.695 ops/s
+Iteration   1: 32206.161 ops/s
+Iteration   2: 33940.521 ops/s
+Iteration   3: 32567.838 ops/s
+Iteration   4: 33676.064 ops/s
+Iteration   5: 34177.414 ops/s
+Iteration   6: 33367.211 ops/s
+Iteration   7: 33057.198 ops/s
+Iteration   8: 33475.931 ops/s
+Iteration   9: 33948.263 ops/s
+Iteration  10: 33514.712 ops/s
+Iteration  11: 34107.622 ops/s
+Iteration  12: 33686.499 ops/s
+Iteration  13: 34185.733 ops/s
+Iteration  14: 33781.817 ops/s
+Iteration  15: 33680.294 ops/s
+Iteration  16: 33369.435 ops/s
+Iteration  17: 33667.812 ops/s
+Iteration  18: 32902.553 ops/s
+Iteration  19: 28014.152 ops/s
+Iteration  20: 33208.474 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  33226.785 ±(99.9%) 1156.770 ops/s [Average]
+  (min, avg, max) = (28014.152, 33226.785, 34185.733), stdev = 1332.138
+  CI (99.9%): [32070.016, 34383.555] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 39.58% complete, ETA 00:25:58
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:20:51 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:20:52 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+32211.533 ops/s
+# Warmup Iteration   2: 30922.088 ops/s
+# Warmup Iteration   3: 32710.014 ops/s
+# Warmup Iteration   4: 32981.621 ops/s
+# Warmup Iteration   5: 30580.802 ops/s
+# Warmup Iteration   6: 32377.430 ops/s
+# Warmup Iteration   7: 32529.854 ops/s
+# Warmup Iteration   8: 33034.368 ops/s
+# Warmup Iteration   9: 32783.169 ops/s
+# Warmup Iteration  10: 33354.559 ops/s
+# Warmup Iteration  11: 32972.809 ops/s
+# Warmup Iteration  12: 29910.324 ops/s
+# Warmup Iteration  13: 32230.819 ops/s
+# Warmup Iteration  14: 32316.902 ops/s
+# Warmup Iteration  15: 31571.809 ops/s
+# Warmup Iteration  16: 31713.550 ops/s
+# Warmup Iteration  17: 31022.565 ops/s
+# Warmup Iteration  18: 31816.223 ops/s
+# Warmup Iteration  19: 31195.648 ops/s
+# Warmup Iteration  20: 31401.139 ops/s
+Iteration   1: 30817.875 ops/s
+Iteration   2: 30573.076 ops/s
+Iteration   3: 30199.180 ops/s
+Iteration   4: 32230.267 ops/s
+Iteration   5: 30639.717 ops/s
+Iteration   6: 31099.743 ops/s
+Iteration   7: 31780.976 ops/s
+Iteration   8: 31244.737 ops/s
+Iteration   9: 31861.834 ops/s
+Iteration  10: 29297.138 ops/s
+Iteration  11: 30767.655 ops/s
+Iteration  12: 31527.269 ops/s
+Iteration  13: 32339.180 ops/s
+Iteration  14: 31736.725 ops/s
+Iteration  15: 31103.838 ops/s
+Iteration  16: 31770.592 ops/s
+Iteration  17: 31678.990 ops/s
+Iteration  18: 31466.102 ops/s
+Iteration  19: 31830.394 ops/s
+Iteration  20: 30580.134 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  31227.271 ±(99.9%) 648.785 ops/s [Average]
+  (min, avg, max) = (29297.138, 31227.271, 32339.180), stdev = 747.142
+  CI (99.9%): [30578.486, 31876.057] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 41.67% complete, ETA 00:25:21
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:21:58 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:21:58 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+60002.736 ops/s
+# Warmup Iteration   2: 60677.220 ops/s
+# Warmup Iteration   3: 60517.031 ops/s
+# Warmup Iteration   4: 60957.457 ops/s
+# Warmup Iteration   5: 61379.776 ops/s
+# Warmup Iteration   6: 62329.636 ops/s
+# Warmup Iteration   7: 62540.736 ops/s
+# Warmup Iteration   8: 60772.034 ops/s
+# Warmup Iteration   9: 60495.018 ops/s
+# Warmup Iteration  10: 61451.210 ops/s
+# Warmup Iteration  11: 57945.104 ops/s
+# Warmup Iteration  12: 59085.410 ops/s
+# Warmup Iteration  13: 59653.764 ops/s
+# Warmup Iteration  14: 59052.405 ops/s
+# Warmup Iteration  15: 60727.026 ops/s
+# Warmup Iteration  16: 61980.212 ops/s
+# Warmup Iteration  17: 62238.171 ops/s
+# Warmup Iteration  18: 61752.654 ops/s
+# Warmup Iteration  19: 61537.694 ops/s
+# Warmup Iteration  20: 62514.897 ops/s
+Iteration   1: 61795.310 ops/s
+Iteration   2: 62298.556 ops/s
+Iteration   3: 62502.351 ops/s
+Iteration   4: 62253.713 ops/s
+Iteration   5: 62663.964 ops/s
+Iteration   6: 60338.297 ops/s
+Iteration   7: 61365.667 ops/s
+Iteration   8: 61432.470 ops/s
+Iteration   9: 62170.612 ops/s
+Iteration  10: 61982.671 ops/s
+Iteration  11: 61549.399 ops/s
+Iteration  12: 61208.307 ops/s
+Iteration  13: 61320.159 ops/s
+Iteration  14: 62402.174 ops/s
+Iteration  15: 63644.739 ops/s
+Iteration  16: 63848.342 ops/s
+Iteration  17: 63058.013 ops/s
+Iteration  18: 58121.699 ops/s
+Iteration  19: 61261.501 ops/s
+Iteration  20: 59787.655 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  61750.280 ±(99.9%) 1132.763 ops/s [Average]
+  (min, avg, max) = (58121.699, 61750.280, 63848.342), stdev = 1304.492
+  CI (99.9%): [60617.517, 62883.043] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 43.75% complete, ETA 00:24:15
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:22:42 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:22:42 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+56674.786 ops/s
+# Warmup Iteration   2: 56302.248 ops/s
+# Warmup Iteration   3: 59571.825 ops/s
+# Warmup Iteration   4: 59619.747 ops/s
+# Warmup Iteration   5: 58618.735 ops/s
+# Warmup Iteration   6: 60470.184 ops/s
+# Warmup Iteration   7: 60674.428 ops/s
+# Warmup Iteration   8: 60047.982 ops/s
+# Warmup Iteration   9: 60003.757 ops/s
+# Warmup Iteration  10: 57973.676 ops/s
+# Warmup Iteration  11: 59446.792 ops/s
+# Warmup Iteration  12: 59295.613 ops/s
+# Warmup Iteration  13: 55935.395 ops/s
+# Warmup Iteration  14: 57688.807 ops/s
+# Warmup Iteration  15: 60706.131 ops/s
+# Warmup Iteration  16: 60078.784 ops/s
+# Warmup Iteration  17: 57411.417 ops/s
+# Warmup Iteration  18: 52043.892 ops/s
+# Warmup Iteration  19: 51321.825 ops/s
+# Warmup Iteration  20: 59119.720 ops/s
+Iteration   1: 59838.090 ops/s
+Iteration   2: 54580.556 ops/s
+Iteration   3: 60015.671 ops/s
+Iteration   4: 56559.674 ops/s
+Iteration   5: 57135.044 ops/s
+Iteration   6: 59997.681 ops/s
+Iteration   7: 60421.677 ops/s
+Iteration   8: 57486.608 ops/s
+Iteration   9: 56252.037 ops/s
+Iteration  10: 59841.784 ops/s
+Iteration  11: 59732.236 ops/s
+Iteration  12: 58562.740 ops/s
+Iteration  13: 60250.611 ops/s
+Iteration  14: 60531.546 ops/s
+Iteration  15: 59738.643 ops/s
+Iteration  16: 59860.705 ops/s
+Iteration  17: 52485.966 ops/s
+Iteration  18: 56659.878 ops/s
+Iteration  19: 58528.330 ops/s
+Iteration  20: 60507.035 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  58449.326 ±(99.9%) 1936.858 ops/s [Average]
+  (min, avg, max) = (52485.966, 58449.326, 60531.546), stdev = 2230.489
+  CI (99.9%): [56512.467, 60386.184] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 45.83% complete, ETA 00:23:10
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:23:27 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:23:27 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+36841.190 ops/s
+# Warmup Iteration   2: 34574.898 ops/s
+# Warmup Iteration   3: 37814.422 ops/s
+# Warmup Iteration   4: 37798.113 ops/s
+# Warmup Iteration   5: 37201.764 ops/s
+# Warmup Iteration   6: 37657.581 ops/s
+# Warmup Iteration   7: 37819.302 ops/s
+# Warmup Iteration   8: 38283.249 ops/s
+# Warmup Iteration   9: 37765.950 ops/s
+# Warmup Iteration  10: 38451.032 ops/s
+# Warmup Iteration  11: 38098.769 ops/s
+# Warmup Iteration  12: 36898.509 ops/s
+# Warmup Iteration  13: 38217.641 ops/s
+# Warmup Iteration  14: 36775.656 ops/s
+# Warmup Iteration  15: 38438.873 ops/s
+# Warmup Iteration  16: 38804.377 ops/s
+# Warmup Iteration  17: 38295.036 ops/s
+# Warmup Iteration  18: 39748.957 ops/s
+# Warmup Iteration  19: 39293.248 ops/s
+# Warmup Iteration  20: 39448.240 ops/s
+Iteration   1: 39478.830 ops/s
+Iteration   2: 38246.274 ops/s
+Iteration   3: 38826.355 ops/s
+Iteration   4: 38833.043 ops/s
+Iteration   5: 38713.700 ops/s
+Iteration   6: 38403.031 ops/s
+Iteration   7: 38998.734 ops/s
+Iteration   8: 39232.545 ops/s
+Iteration   9: 38967.581 ops/s
+Iteration  10: 36837.238 ops/s
+Iteration  11: 36525.809 ops/s
+Iteration  12: 37718.802 ops/s
+Iteration  13: 38526.033 ops/s
+Iteration  14: 38764.662 ops/s
+Iteration  15: 38515.551 ops/s
+Iteration  16: 38202.214 ops/s
+Iteration  17: 38767.317 ops/s
+Iteration  18: 38629.721 ops/s
+Iteration  19: 38443.252 ops/s
+Iteration  20: 38300.880 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  38446.578 ±(99.9%) 623.805 ops/s [Average]
+  (min, avg, max) = (36525.809, 38446.578, 39478.830), stdev = 718.374
+  CI (99.9%): [37822.774, 39070.383] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 47.92% complete, ETA 00:22:08
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:24:12 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:24:12 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+31756.752 ops/s
+# Warmup Iteration   2: 32610.628 ops/s
+# Warmup Iteration   3: 34140.791 ops/s
+# Warmup Iteration   4: 36079.502 ops/s
+# Warmup Iteration   5: 36342.686 ops/s
+# Warmup Iteration   6: 36620.817 ops/s
+# Warmup Iteration   7: 36224.920 ops/s
+# Warmup Iteration   8: 36967.264 ops/s
+# Warmup Iteration   9: 37923.201 ops/s
+# Warmup Iteration  10: 34694.330 ops/s
+# Warmup Iteration  11: 36833.735 ops/s
+# Warmup Iteration  12: 33880.084 ops/s
+# Warmup Iteration  13: 33133.672 ops/s
+# Warmup Iteration  14: 34633.538 ops/s
+# Warmup Iteration  15: 37270.763 ops/s
+# Warmup Iteration  16: 37461.505 ops/s
+# Warmup Iteration  17: 35999.293 ops/s
+# Warmup Iteration  18: 37280.352 ops/s
+# Warmup Iteration  19: 35208.910 ops/s
+# Warmup Iteration  20: 33378.732 ops/s
+Iteration   1: 36952.855 ops/s
+Iteration   2: 36312.669 ops/s
+Iteration   3: 35476.852 ops/s
+Iteration   4: 35683.536 ops/s
+Iteration   5: 36638.309 ops/s
+Iteration   6: 35410.250 ops/s
+Iteration   7: 36491.036 ops/s
+Iteration   8: 34786.816 ops/s
+Iteration   9: 35510.593 ops/s
+Iteration  10: 36353.770 ops/s
+Iteration  11: 36139.926 ops/s
+Iteration  12: 37034.232 ops/s
+Iteration  13: 36395.023 ops/s
+Iteration  14: 37022.788 ops/s
+Iteration  15: 37069.529 ops/s
+Iteration  16: 33703.606 ops/s
+Iteration  17: 34405.144 ops/s
+Iteration  18: 33040.320 ops/s
+Iteration  19: 33634.473 ops/s
+Iteration  20: 34167.940 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  35611.483 ±(99.9%) 1094.005 ops/s [Average]
+  (min, avg, max) = (33040.320, 35611.483, 37069.529), stdev = 1259.858
+  CI (99.9%): [34517.479, 36705.488] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 50.00% complete, ETA 00:21:07
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:24:58 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:24:58 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+49268.977 ops/s
+# Warmup Iteration   2: 51139.652 ops/s
+# Warmup Iteration   3: 51091.943 ops/s
+# Warmup Iteration   4: 49209.837 ops/s
+# Warmup Iteration   5: 50929.503 ops/s
+# Warmup Iteration   6: 49564.934 ops/s
+# Warmup Iteration   7: 44680.792 ops/s
+# Warmup Iteration   8: 53312.813 ops/s
+# Warmup Iteration   9: 46843.175 ops/s
+# Warmup Iteration  10: 52264.431 ops/s
+# Warmup Iteration  11: 49128.119 ops/s
+# Warmup Iteration  12: 52321.537 ops/s
+# Warmup Iteration  13: 51389.897 ops/s
+# Warmup Iteration  14: 50245.454 ops/s
+# Warmup Iteration  15: 52056.976 ops/s
+# Warmup Iteration  16: 51390.969 ops/s
+# Warmup Iteration  17: 52092.607 ops/s
+# Warmup Iteration  18: 51906.962 ops/s
+# Warmup Iteration  19: 52593.211 ops/s
+# Warmup Iteration  20: 51396.968 ops/s
+Iteration   1: 51188.109 ops/s
+Iteration   2: 47716.392 ops/s
+Iteration   3: 51841.760 ops/s
+Iteration   4: 52244.456 ops/s
+Iteration   5: 50624.714 ops/s
+Iteration   6: 52052.636 ops/s
+Iteration   7: 49673.281 ops/s
+Iteration   8: 51546.010 ops/s
+Iteration   9: 52529.120 ops/s
+Iteration  10: 52376.369 ops/s
+Iteration  11: 51764.656 ops/s
+Iteration  12: 52526.053 ops/s
+Iteration  13: 51988.102 ops/s
+Iteration  14: 52798.286 ops/s
+Iteration  15: 51574.129 ops/s
+Iteration  16: 51532.195 ops/s
+Iteration  17: 51473.672 ops/s
+Iteration  18: 48218.728 ops/s
+Iteration  19: 52138.734 ops/s
+Iteration  20: 51202.698 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  51350.505 ±(99.9%) 1181.791 ops/s [Average]
+  (min, avg, max) = (47716.392, 51350.505, 52798.286), stdev = 1360.952
+  CI (99.9%): [50168.714, 52532.296] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 52.08% complete, ETA 00:20:10
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:25:46 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:25:47 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+47529.074 ops/s
+# Warmup Iteration   2: 47317.487 ops/s
+# Warmup Iteration   3: 46667.807 ops/s
+# Warmup Iteration   4: 48837.194 ops/s
+# Warmup Iteration   5: 48855.135 ops/s
+# Warmup Iteration   6: 47650.693 ops/s
+# Warmup Iteration   7: 50954.127 ops/s
+# Warmup Iteration   8: 52269.559 ops/s
+# Warmup Iteration   9: 49685.548 ops/s
+# Warmup Iteration  10: 50554.225 ops/s
+# Warmup Iteration  11: 51969.637 ops/s
+# Warmup Iteration  12: 49611.273 ops/s
+# Warmup Iteration  13: 48513.372 ops/s
+# Warmup Iteration  14: 45738.688 ops/s
+# Warmup Iteration  15: 50047.230 ops/s
+# Warmup Iteration  16: 43997.994 ops/s
+# Warmup Iteration  17: 50403.261 ops/s
+# Warmup Iteration  18: 52379.858 ops/s
+# Warmup Iteration  19: 51434.877 ops/s
+# Warmup Iteration  20: 51484.566 ops/s
+Iteration   1: 48256.308 ops/s
+Iteration   2: 46341.617 ops/s
+Iteration   3: 49517.805 ops/s
+Iteration   4: 50865.802 ops/s
+Iteration   5: 49487.290 ops/s
+Iteration   6: 51175.668 ops/s
+Iteration   7: 52000.208 ops/s
+Iteration   8: 51825.805 ops/s
+Iteration   9: 51273.421 ops/s
+Iteration  10: 50532.906 ops/s
+Iteration  11: 50966.404 ops/s
+Iteration  12: 51209.245 ops/s
+Iteration  13: 51251.314 ops/s
+Iteration  14: 52049.390 ops/s
+Iteration  15: 48574.464 ops/s
+Iteration  16: 51432.285 ops/s
+Iteration  17: 52474.340 ops/s
+Iteration  18: 52475.717 ops/s
+Iteration  19: 43239.646 ops/s
+Iteration  20: 51253.787 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  50310.171 ±(99.9%) 1973.519 ops/s [Average]
+  (min, avg, max) = (43239.646, 50310.171, 52475.717), stdev = 2272.707
+  CI (99.9%): [48336.652, 52283.690] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 54.17% complete, ETA 00:19:15
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:26:36 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:26:36 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+33719.219 ops/s
+# Warmup Iteration   2: 34650.334 ops/s
+# Warmup Iteration   3: 33340.420 ops/s
+# Warmup Iteration   4: 27569.883 ops/s
+# Warmup Iteration   5: 31201.587 ops/s
+# Warmup Iteration   6: 34379.126 ops/s
+# Warmup Iteration   7: 32164.277 ops/s
+# Warmup Iteration   8: 31886.643 ops/s
+# Warmup Iteration   9: 31508.703 ops/s
+# Warmup Iteration  10: 34805.028 ops/s
+# Warmup Iteration  11: 34650.594 ops/s
+# Warmup Iteration  12: 33913.549 ops/s
+# Warmup Iteration  13: 33865.156 ops/s
+# Warmup Iteration  14: 33916.786 ops/s
+# Warmup Iteration  15: 34277.503 ops/s
+# Warmup Iteration  16: 34561.873 ops/s
+# Warmup Iteration  17: 32773.578 ops/s
+# Warmup Iteration  18: 32277.382 ops/s
+# Warmup Iteration  19: 30125.145 ops/s
+# Warmup Iteration  20: 32980.986 ops/s
+Iteration   1: 33354.183 ops/s
+Iteration   2: 31879.137 ops/s
+Iteration   3: 33792.188 ops/s
+Iteration   4: 32588.904 ops/s
+Iteration   5: 33498.066 ops/s
+Iteration   6: 31756.883 ops/s
+Iteration   7: 31554.495 ops/s
+Iteration   8: 33838.718 ops/s
+Iteration   9: 33974.465 ops/s
+Iteration  10: 34526.509 ops/s
+Iteration  11: 34878.699 ops/s
+Iteration  12: 34003.983 ops/s
+Iteration  13: 34385.920 ops/s
+Iteration  14: 33796.644 ops/s
+Iteration  15: 34021.785 ops/s
+Iteration  16: 34124.969 ops/s
+Iteration  17: 33676.043 ops/s
+Iteration  18: 34299.283 ops/s
+Iteration  19: 34135.736 ops/s
+Iteration  20: 34470.845 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  33627.873 ±(99.9%) 825.262 ops/s [Average]
+  (min, avg, max) = (31554.495, 33627.873, 34878.699), stdev = 950.373
+  CI (99.9%): [32802.611, 34453.135] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 56.25% complete, ETA 00:18:46
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:28:00 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:28:00 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+33080.904 ops/s
+# Warmup Iteration   2: 31904.892 ops/s
+# Warmup Iteration   3: 31563.550 ops/s
+# Warmup Iteration   4: 32877.244 ops/s
+# Warmup Iteration   5: 32904.807 ops/s
+# Warmup Iteration   6: 32799.344 ops/s
+# Warmup Iteration   7: 33137.306 ops/s
+# Warmup Iteration   8: 32734.396 ops/s
+# Warmup Iteration   9: 32899.000 ops/s
+# Warmup Iteration  10: 32652.953 ops/s
+# Warmup Iteration  11: 32850.257 ops/s
+# Warmup Iteration  12: 32460.224 ops/s
+# Warmup Iteration  13: 32048.976 ops/s
+# Warmup Iteration  14: 31969.991 ops/s
+# Warmup Iteration  15: 32272.142 ops/s
+# Warmup Iteration  16: 32284.142 ops/s
+# Warmup Iteration  17: 32108.068 ops/s
+# Warmup Iteration  18: 32384.402 ops/s
+# Warmup Iteration  19: 19932.074 ops/s
+# Warmup Iteration  20: 31446.474 ops/s
+Iteration   1: 32010.671 ops/s
+Iteration   2: 31876.835 ops/s
+Iteration   3: 32774.847 ops/s
+Iteration   4: 32089.257 ops/s
+Iteration   5: 31553.666 ops/s
+Iteration   6: 32187.161 ops/s
+Iteration   7: 32019.066 ops/s
+Iteration   8: 31920.939 ops/s
+Iteration   9: 31375.802 ops/s
+Iteration  10: 31747.090 ops/s
+Iteration  11: 28427.749 ops/s
+Iteration  12: 31234.152 ops/s
+Iteration  13: 31819.453 ops/s
+Iteration  14: 26844.991 ops/s
+Iteration  15: 25398.283 ops/s
+Iteration  16: 24419.808 ops/s
+Iteration  17: 22894.667 ops/s
+Iteration  18: 22053.568 ops/s
+Iteration  19: 20364.329 ops/s
+Iteration  20: 19692.440 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  28635.239 ±(99.9%) 3906.766 ops/s [Average]
+  (min, avg, max) = (19692.440, 28635.239, 32774.847), stdev = 4499.037
+  CI (99.9%): [24728.473, 32542.004] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 58.33% complete, ETA 00:18:06
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:29:12 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:29:12 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+57628.329 ops/s
+# Warmup Iteration   2: 60157.753 ops/s
+# Warmup Iteration   3: 59973.005 ops/s
+# Warmup Iteration   4: 58397.064 ops/s
+# Warmup Iteration   5: 60398.116 ops/s
+# Warmup Iteration   6: 58172.604 ops/s
+# Warmup Iteration   7: 57349.120 ops/s
+# Warmup Iteration   8: 60839.590 ops/s
+# Warmup Iteration   9: 59302.457 ops/s
+# Warmup Iteration  10: 59328.100 ops/s
+# Warmup Iteration  11: 59068.637 ops/s
+# Warmup Iteration  12: 59356.667 ops/s
+# Warmup Iteration  13: 54285.541 ops/s
+# Warmup Iteration  14: 58603.077 ops/s
+# Warmup Iteration  15: 60465.714 ops/s
+# Warmup Iteration  16: 58903.348 ops/s
+# Warmup Iteration  17: 58300.895 ops/s
+# Warmup Iteration  18: 59090.919 ops/s
+# Warmup Iteration  19: 60176.631 ops/s
+# Warmup Iteration  20: 60174.658 ops/s
+Iteration   1: 60459.386 ops/s
+Iteration   2: 61516.876 ops/s
+Iteration   3: 61974.237 ops/s
+Iteration   4: 58021.093 ops/s
+Iteration   5: 61620.871 ops/s
+Iteration   6: 60571.754 ops/s
+Iteration   7: 58375.504 ops/s
+Iteration   8: 60300.630 ops/s
+Iteration   9: 60819.904 ops/s
+Iteration  10: 59118.023 ops/s
+Iteration  11: 60626.094 ops/s
+Iteration  12: 60317.812 ops/s
+Iteration  13: 60527.901 ops/s
+Iteration  14: 59013.404 ops/s
+Iteration  15: 60429.811 ops/s
+Iteration  16: 59497.814 ops/s
+Iteration  17: 60278.407 ops/s
+Iteration  18: 55149.290 ops/s
+Iteration  19: 61734.423 ops/s
+Iteration  20: 60459.243 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  60040.624 ±(99.9%) 1357.501 ops/s [Average]
+  (min, avg, max) = (55149.290, 60040.624, 61974.237), stdev = 1563.300
+  CI (99.9%): [58683.123, 61398.125] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 60.42% complete, ETA 00:17:08
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:30:01 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:30:01 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+54787.085 ops/s
+# Warmup Iteration   2: 56633.732 ops/s
+# Warmup Iteration   3: 59070.697 ops/s
+# Warmup Iteration   4: 57671.114 ops/s
+# Warmup Iteration   5: 58052.204 ops/s
+# Warmup Iteration   6: 55247.965 ops/s
+# Warmup Iteration   7: 60191.958 ops/s
+# Warmup Iteration   8: 58827.505 ops/s
+# Warmup Iteration   9: 56095.118 ops/s
+# Warmup Iteration  10: 58741.707 ops/s
+# Warmup Iteration  11: 59233.473 ops/s
+# Warmup Iteration  12: 56380.037 ops/s
+# Warmup Iteration  13: 56725.937 ops/s
+# Warmup Iteration  14: 57437.537 ops/s
+# Warmup Iteration  15: 58078.737 ops/s
+# Warmup Iteration  16: 58203.721 ops/s
+# Warmup Iteration  17: 57386.656 ops/s
+# Warmup Iteration  18: 58400.443 ops/s
+# Warmup Iteration  19: 58188.265 ops/s
+# Warmup Iteration  20: 59117.969 ops/s
+Iteration   1: 58336.948 ops/s
+Iteration   2: 57770.547 ops/s
+Iteration   3: 60518.292 ops/s
+Iteration   4: 58686.333 ops/s
+Iteration   5: 57164.787 ops/s
+Iteration   6: 58334.790 ops/s
+Iteration   7: 58919.026 ops/s
+Iteration   8: 60318.069 ops/s
+Iteration   9: 58297.242 ops/s
+Iteration  10: 59346.381 ops/s
+Iteration  11: 57922.514 ops/s
+Iteration  12: 57623.883 ops/s
+Iteration  13: 58731.437 ops/s
+Iteration  14: 59683.269 ops/s
+Iteration  15: 59069.864 ops/s
+Iteration  16: 58752.613 ops/s
+Iteration  17: 58063.974 ops/s
+Iteration  18: 60039.313 ops/s
+Iteration  19: 58972.449 ops/s
+Iteration  20: 57651.630 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  58710.168 ±(99.9%) 803.748 ops/s [Average]
+  (min, avg, max) = (57164.787, 58710.168, 60518.292), stdev = 925.597
+  CI (99.9%): [57906.420, 59513.916] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 62.50% complete, ETA 00:16:11
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:30:49 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:30:50 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+37885.504 ops/s
+# Warmup Iteration   2: 37829.864 ops/s
+# Warmup Iteration   3: 37809.120 ops/s
+# Warmup Iteration   4: 36774.522 ops/s
+# Warmup Iteration   5: 37620.618 ops/s
+# Warmup Iteration   6: 38579.736 ops/s
+# Warmup Iteration   7: 38026.164 ops/s
+# Warmup Iteration   8: 39419.353 ops/s
+# Warmup Iteration   9: 38701.588 ops/s
+# Warmup Iteration  10: 39177.117 ops/s
+# Warmup Iteration  11: 37391.424 ops/s
+# Warmup Iteration  12: 27655.872 ops/s
+# Warmup Iteration  13: 38881.577 ops/s
+# Warmup Iteration  14: 39197.690 ops/s
+# Warmup Iteration  15: 39804.236 ops/s
+# Warmup Iteration  16: 39959.836 ops/s
+# Warmup Iteration  17: 35632.533 ops/s
+# Warmup Iteration  18: 37403.433 ops/s
+# Warmup Iteration  19: 38503.760 ops/s
+# Warmup Iteration  20: 38963.687 ops/s
+Iteration   1: 38773.243 ops/s
+Iteration   2: 38630.832 ops/s
+Iteration   3: 19647.454 ops/s
+Iteration   4: 37704.174 ops/s
+Iteration   5: 38629.633 ops/s
+Iteration   6: 38400.509 ops/s
+Iteration   7: 18218.155 ops/s
+Iteration   8: 38990.513 ops/s
+Iteration   9: 36927.235 ops/s
+Iteration  10: 38318.116 ops/s
+Iteration  11: 36977.374 ops/s
+Iteration  12: 38150.143 ops/s
+Iteration  13: 38359.505 ops/s
+Iteration  14: 38391.062 ops/s
+Iteration  15: 37585.548 ops/s
+Iteration  16: 37875.908 ops/s
+Iteration  17: 37090.315 ops/s
+Iteration  18: 40064.670 ops/s
+Iteration  19: 40328.421 ops/s
+Iteration  20: 37845.425 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  36345.412 ±(99.9%) 5230.399 ops/s [Average]
+  (min, avg, max) = (18218.155, 36345.412, 40328.421), stdev = 6023.336
+  CI (99.9%): [31115.012, 41575.811] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 64.58% complete, ETA 00:15:16
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:31:41 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:31:41 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+34347.329 ops/s
+# Warmup Iteration   2: 33770.105 ops/s
+# Warmup Iteration   3: 34881.323 ops/s
+# Warmup Iteration   4: 7489.871 ops/s
+# Warmup Iteration   5: 36069.959 ops/s
+# Warmup Iteration   6: 34241.002 ops/s
+# Warmup Iteration   7: 34504.654 ops/s
+# Warmup Iteration   8: 35861.443 ops/s
+# Warmup Iteration   9: 14495.381 ops/s
+# Warmup Iteration  10: 34677.070 ops/s
+# Warmup Iteration  11: 5553.985 ops/s
+# Warmup Iteration  12: 35813.899 ops/s
+# Warmup Iteration  13: 31315.685 ops/s
+# Warmup Iteration  14: 34780.185 ops/s
+# Warmup Iteration  15: 21018.199 ops/s
+# Warmup Iteration  16: 36008.635 ops/s
+# Warmup Iteration  17: 35161.416 ops/s
+# Warmup Iteration  18: 35755.330 ops/s
+# Warmup Iteration  19: 25173.960 ops/s
+# Warmup Iteration  20: 35712.157 ops/s
+Iteration   1: 35526.569 ops/s
+Iteration   2: 36518.054 ops/s
+Iteration   3: 36447.298 ops/s
+Iteration   4: 36708.677 ops/s
+Iteration   5: 36497.050 ops/s
+Iteration   6: 33262.887 ops/s
+Iteration   7: 35601.787 ops/s
+Iteration   8: 36456.689 ops/s
+Iteration   9: 36231.961 ops/s
+Iteration  10: 36555.946 ops/s
+Iteration  11: 35156.791 ops/s
+Iteration  12: 35792.974 ops/s
+Iteration  13: 23972.472 ops/s
+Iteration  14: 36526.197 ops/s
+Iteration  15: 36300.473 ops/s
+Iteration  16: 35546.500 ops/s
+Iteration  17: 35105.091 ops/s
+Iteration  18: 28136.048 ops/s
+Iteration  19: 31386.011 ops/s
+Iteration  20: 36070.522 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWrite":
+  34690.000 ±(99.9%) 2854.170 ops/s [Average]
+  (min, avg, max) = (23972.472, 34690.000, 36708.677), stdev = 3286.866
+  CI (99.9%): [31835.830, 37544.170] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 66.67% complete, ETA 00:14:23
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:32:37 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:32:37 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+465.440 ops/s
+# Warmup Iteration   2: 493.143 ops/s
+# Warmup Iteration   3: 493.752 ops/s
+# Warmup Iteration   4: 492.426 ops/s
+# Warmup Iteration   5: 499.005 ops/s
+# Warmup Iteration   6: 504.976 ops/s
+# Warmup Iteration   7: 496.606 ops/s
+# Warmup Iteration   8: 494.823 ops/s
+# Warmup Iteration   9: 489.911 ops/s
+# Warmup Iteration  10: 491.331 ops/s
+# Warmup Iteration  11: 484.731 ops/s
+# Warmup Iteration  12: 508.328 ops/s
+# Warmup Iteration  13: 503.812 ops/s
+# Warmup Iteration  14: 504.296 ops/s
+# Warmup Iteration  15: 498.543 ops/s
+# Warmup Iteration  16: 499.461 ops/s
+# Warmup Iteration  17: 504.450 ops/s
+# Warmup Iteration  18: 503.768 ops/s
+# Warmup Iteration  19: 501.585 ops/s
+# Warmup Iteration  20: 497.466 ops/s
+Iteration   1: 495.175 ops/s
+Iteration   2: 504.289 ops/s
+Iteration   3: 503.339 ops/s
+Iteration   4: 502.648 ops/s
+Iteration   5: 500.961 ops/s
+Iteration   6: 491.073 ops/s
+Iteration   7: 495.197 ops/s
+Iteration   8: 491.927 ops/s
+Iteration   9: 489.661 ops/s
+Iteration  10: 503.289 ops/s
+Iteration  11: 496.149 ops/s
+Iteration  12: 440.021 ops/s
+Iteration  13: 492.105 ops/s
+Iteration  14: 503.707 ops/s
+Iteration  15: 494.276 ops/s
+Iteration  16: 507.105 ops/s
+Iteration  17: 488.858 ops/s
+Iteration  18: 491.197 ops/s
+Iteration  19: 494.679 ops/s
+Iteration  20: 495.424 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  494.054 ±(99.9%) 12.055 ops/s [Average]
+  (min, avg, max) = (440.021, 494.054, 507.105), stdev = 13.883
+  CI (99.9%): [481.999, 506.109] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 68.75% complete, ETA 00:13:25
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:33:22 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:33:22 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+419.787 ops/s
+# Warmup Iteration   2: 451.798 ops/s
+# Warmup Iteration   3: 477.793 ops/s
+# Warmup Iteration   4: 477.984 ops/s
+# Warmup Iteration   5: 469.913 ops/s
+# Warmup Iteration   6: 469.639 ops/s
+# Warmup Iteration   7: 471.562 ops/s
+# Warmup Iteration   8: 474.831 ops/s
+# Warmup Iteration   9: 474.392 ops/s
+# Warmup Iteration  10: 473.398 ops/s
+# Warmup Iteration  11: 470.598 ops/s
+# Warmup Iteration  12: 469.722 ops/s
+# Warmup Iteration  13: 473.529 ops/s
+# Warmup Iteration  14: 473.633 ops/s
+# Warmup Iteration  15: 473.681 ops/s
+# Warmup Iteration  16: 471.327 ops/s
+# Warmup Iteration  17: 474.351 ops/s
+# Warmup Iteration  18: 464.448 ops/s
+# Warmup Iteration  19: 465.383 ops/s
+# Warmup Iteration  20: 478.038 ops/s
+Iteration   1: 472.435 ops/s
+Iteration   2: 467.986 ops/s
+Iteration   3: 464.233 ops/s
+Iteration   4: 462.940 ops/s
+Iteration   5: 446.463 ops/s
+Iteration   6: 471.620 ops/s
+Iteration   7: 468.634 ops/s
+Iteration   8: 464.678 ops/s
+Iteration   9: 460.489 ops/s
+Iteration  10: 448.907 ops/s
+Iteration  11: 474.343 ops/s
+Iteration  12: 477.601 ops/s
+Iteration  13: 468.817 ops/s
+Iteration  14: 472.044 ops/s
+Iteration  15: 470.331 ops/s
+Iteration  16: 476.576 ops/s
+Iteration  17: 472.344 ops/s
+Iteration  18: 466.105 ops/s
+Iteration  19: 477.589 ops/s
+Iteration  20: 477.738 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  468.094 ±(99.9%) 7.471 ops/s [Average]
+  (min, avg, max) = (446.463, 468.094, 477.738), stdev = 8.603
+  CI (99.9%): [460.623, 475.564] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 70.83% complete, ETA 00:12:27
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:34:06 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:34:07 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+428.907 ops/s
+# Warmup Iteration   2: 411.695 ops/s
+# Warmup Iteration   3: 436.561 ops/s
+# Warmup Iteration   4: 434.963 ops/s
+# Warmup Iteration   5: 408.456 ops/s
+# Warmup Iteration   6: 416.269 ops/s
+# Warmup Iteration   7: 401.580 ops/s
+# Warmup Iteration   8: 415.691 ops/s
+# Warmup Iteration   9: 424.275 ops/s
+# Warmup Iteration  10: 417.308 ops/s
+# Warmup Iteration  11: 424.287 ops/s
+# Warmup Iteration  12: 418.459 ops/s
+# Warmup Iteration  13: 407.107 ops/s
+# Warmup Iteration  14: 416.962 ops/s
+# Warmup Iteration  15: 412.494 ops/s
+# Warmup Iteration  16: 384.026 ops/s
+# Warmup Iteration  17: 396.342 ops/s
+# Warmup Iteration  18: 396.481 ops/s
+# Warmup Iteration  19: 411.789 ops/s
+# Warmup Iteration  20: 411.912 ops/s
+Iteration   1: 410.436 ops/s
+Iteration   2: 408.083 ops/s
+Iteration   3: 404.896 ops/s
+Iteration   4: 407.212 ops/s
+Iteration   5: 403.516 ops/s
+Iteration   6: 402.484 ops/s
+Iteration   7: 388.079 ops/s
+Iteration   8: 387.285 ops/s
+Iteration   9: 404.652 ops/s
+Iteration  10: 399.262 ops/s
+Iteration  11: 401.063 ops/s
+Iteration  12: 401.252 ops/s
+Iteration  13: 390.597 ops/s
+Iteration  14: 399.441 ops/s
+Iteration  15: 401.425 ops/s
+Iteration  16: 395.184 ops/s
+Iteration  17: 383.543 ops/s
+Iteration  18: 379.598 ops/s
+Iteration  19: 404.411 ops/s
+Iteration  20: 396.634 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  398.453 ±(99.9%) 7.404 ops/s [Average]
+  (min, avg, max) = (379.598, 398.453, 410.436), stdev = 8.527
+  CI (99.9%): [391.048, 405.857] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 72.92% complete, ETA 00:11:43
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:35:24 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:35:24 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+389.495 ops/s
+# Warmup Iteration   2: 386.123 ops/s
+# Warmup Iteration   3: 400.273 ops/s
+# Warmup Iteration   4: 397.708 ops/s
+# Warmup Iteration   5: 392.779 ops/s
+# Warmup Iteration   6: 389.693 ops/s
+# Warmup Iteration   7: 392.209 ops/s
+# Warmup Iteration   8: 369.347 ops/s
+# Warmup Iteration   9: 388.064 ops/s
+# Warmup Iteration  10: 386.476 ops/s
+# Warmup Iteration  11: 390.671 ops/s
+# Warmup Iteration  12: 386.722 ops/s
+# Warmup Iteration  13: 383.698 ops/s
+# Warmup Iteration  14: 371.927 ops/s
+# Warmup Iteration  15: 376.429 ops/s
+# Warmup Iteration  16: 380.634 ops/s
+# Warmup Iteration  17: 379.471 ops/s
+# Warmup Iteration  18: 374.694 ops/s
+# Warmup Iteration  19: 370.780 ops/s
+# Warmup Iteration  20: 375.183 ops/s
+Iteration   1: 375.832 ops/s
+Iteration   2: 375.726 ops/s
+Iteration   3: 371.881 ops/s
+Iteration   4: 378.651 ops/s
+Iteration   5: 379.830 ops/s
+Iteration   6: 380.508 ops/s
+Iteration   7: 378.674 ops/s
+Iteration   8: 375.662 ops/s
+Iteration   9: 378.777 ops/s
+Iteration  10: 378.073 ops/s
+Iteration  11: 366.642 ops/s
+Iteration  12: 370.622 ops/s
+Iteration  13: 371.494 ops/s
+Iteration  14: 375.665 ops/s
+Iteration  15: 373.954 ops/s
+Iteration  16: 372.683 ops/s
+Iteration  17: 368.821 ops/s
+Iteration  18: 368.810 ops/s
+Iteration  19: 50.049 ops/s
+Iteration  20: 207.736 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  350.005 ±(99.9%) 69.404 ops/s [Average]
+  (min, avg, max) = (50.049, 350.005, 380.508), stdev = 79.926
+  CI (99.9%): [280.600, 419.409] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 75.00% complete, ETA 00:10:58
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:36:47 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:36:47 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+573.602 ops/s
+# Warmup Iteration   2: 597.526 ops/s
+# Warmup Iteration   3: 603.295 ops/s
+# Warmup Iteration   4: 600.085 ops/s
+# Warmup Iteration   5: 602.014 ops/s
+# Warmup Iteration   6: 612.355 ops/s
+# Warmup Iteration   7: 616.425 ops/s
+# Warmup Iteration   8: 610.598 ops/s
+# Warmup Iteration   9: 589.405 ops/s
+# Warmup Iteration  10: 608.794 ops/s
+# Warmup Iteration  11: 609.871 ops/s
+# Warmup Iteration  12: 592.769 ops/s
+# Warmup Iteration  13: 564.760 ops/s
+# Warmup Iteration  14: 603.710 ops/s
+# Warmup Iteration  15: 605.385 ops/s
+# Warmup Iteration  16: 602.094 ops/s
+# Warmup Iteration  17: 610.735 ops/s
+# Warmup Iteration  18: 608.713 ops/s
+# Warmup Iteration  19: 600.035 ops/s
+# Warmup Iteration  20: 606.868 ops/s
+Iteration   1: 609.250 ops/s
+Iteration   2: 584.939 ops/s
+Iteration   3: 602.393 ops/s
+Iteration   4: 615.932 ops/s
+Iteration   5: 599.593 ops/s
+Iteration   6: 613.104 ops/s
+Iteration   7: 624.820 ops/s
+Iteration   8: 614.481 ops/s
+Iteration   9: 616.623 ops/s
+Iteration  10: 608.481 ops/s
+Iteration  11: 571.481 ops/s
+Iteration  12: 601.890 ops/s
+Iteration  13: 614.909 ops/s
+Iteration  14: 618.122 ops/s
+Iteration  15: 623.471 ops/s
+Iteration  16: 617.051 ops/s
+Iteration  17: 619.984 ops/s
+Iteration  18: 623.510 ops/s
+Iteration  19: 616.580 ops/s
+Iteration  20: 612.085 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  610.435 ±(99.9%) 11.483 ops/s [Average]
+  (min, avg, max) = (571.481, 610.435, 624.820), stdev = 13.223
+  CI (99.9%): [598.952, 621.918] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 77.08% complete, ETA 00:10:01
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:37:32 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:37:32 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+521.944 ops/s
+# Warmup Iteration   2: 572.656 ops/s
+# Warmup Iteration   3: 588.324 ops/s
+# Warmup Iteration   4: 576.949 ops/s
+# Warmup Iteration   5: 577.786 ops/s
+# Warmup Iteration   6: 591.397 ops/s
+# Warmup Iteration   7: 589.344 ops/s
+# Warmup Iteration   8: 585.882 ops/s
+# Warmup Iteration   9: 586.475 ops/s
+# Warmup Iteration  10: 557.043 ops/s
+# Warmup Iteration  11: 585.557 ops/s
+# Warmup Iteration  12: 575.067 ops/s
+# Warmup Iteration  13: 587.539 ops/s
+# Warmup Iteration  14: 584.642 ops/s
+# Warmup Iteration  15: 576.953 ops/s
+# Warmup Iteration  16: 570.851 ops/s
+# Warmup Iteration  17: 573.149 ops/s
+# Warmup Iteration  18: 594.417 ops/s
+# Warmup Iteration  19: 591.658 ops/s
+# Warmup Iteration  20: 582.027 ops/s
+Iteration   1: 575.140 ops/s
+Iteration   2: 580.530 ops/s
+Iteration   3: 590.008 ops/s
+Iteration   4: 576.320 ops/s
+Iteration   5: 584.523 ops/s
+Iteration   6: 581.312 ops/s
+Iteration   7: 570.926 ops/s
+Iteration   8: 576.151 ops/s
+Iteration   9: 583.176 ops/s
+Iteration  10: 584.904 ops/s
+Iteration  11: 582.403 ops/s
+Iteration  12: 578.096 ops/s
+Iteration  13: 580.760 ops/s
+Iteration  14: 581.727 ops/s
+Iteration  15: 577.879 ops/s
+Iteration  16: 581.662 ops/s
+Iteration  17: 574.901 ops/s
+Iteration  18: 572.452 ops/s
+Iteration  19: 586.711 ops/s
+Iteration  20: 586.936 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  580.326 ±(99.9%) 4.388 ops/s [Average]
+  (min, avg, max) = (570.926, 580.326, 590.008), stdev = 5.054
+  CI (99.9%): [575.937, 584.714] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 79.17% complete, ETA 00:09:03
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:38:17 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:38:17 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+452.738 ops/s
+# Warmup Iteration   2: 438.416 ops/s
+# Warmup Iteration   3: 468.241 ops/s
+# Warmup Iteration   4: 472.079 ops/s
+# Warmup Iteration   5: 469.716 ops/s
+# Warmup Iteration   6: 477.191 ops/s
+# Warmup Iteration   7: 449.723 ops/s
+# Warmup Iteration   8: 385.839 ops/s
+# Warmup Iteration   9: 472.370 ops/s
+# Warmup Iteration  10: 479.598 ops/s
+# Warmup Iteration  11: 474.180 ops/s
+# Warmup Iteration  12: 438.908 ops/s
+# Warmup Iteration  13: 458.004 ops/s
+# Warmup Iteration  14: 465.734 ops/s
+# Warmup Iteration  15: 457.796 ops/s
+# Warmup Iteration  16: 466.720 ops/s
+# Warmup Iteration  17: 477.968 ops/s
+# Warmup Iteration  18: 456.949 ops/s
+# Warmup Iteration  19: 473.966 ops/s
+# Warmup Iteration  20: 475.997 ops/s
+Iteration   1: 485.253 ops/s
+Iteration   2: 482.125 ops/s
+Iteration   3: 471.658 ops/s
+Iteration   4: 479.260 ops/s
+Iteration   5: 476.996 ops/s
+Iteration   6: 54.438 ops/s
+Iteration   7: 480.822 ops/s
+Iteration   8: 410.067 ops/s
+Iteration   9: 421.854 ops/s
+Iteration  10: 467.028 ops/s
+Iteration  11: 468.581 ops/s
+Iteration  12: 479.079 ops/s
+Iteration  13: 469.859 ops/s
+Iteration  14: 471.647 ops/s
+Iteration  15: 474.513 ops/s
+Iteration  16: 220.053 ops/s
+Iteration  17: 477.843 ops/s
+Iteration  18: 474.121 ops/s
+Iteration  19: 479.282 ops/s
+Iteration  20: 477.355 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  436.092 ±(99.9%) 93.238 ops/s [Average]
+  (min, avg, max) = (54.438, 436.092, 485.253), stdev = 107.373
+  CI (99.9%): [342.854, 529.329] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 50000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 81.25% complete, ETA 00:08:08
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:39:07 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:39:07 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+410.856 ops/s
+# Warmup Iteration   2: 407.346 ops/s
+# Warmup Iteration   3: 403.765 ops/s
+# Warmup Iteration   4: 433.103 ops/s
+# Warmup Iteration   5: 447.275 ops/s
+# Warmup Iteration   6: 438.889 ops/s
+# Warmup Iteration   7: 431.746 ops/s
+# Warmup Iteration   8: 432.423 ops/s
+# Warmup Iteration   9: 437.147 ops/s
+# Warmup Iteration  10: 438.102 ops/s
+# Warmup Iteration  11: 441.642 ops/s
+# Warmup Iteration  12: 444.280 ops/s
+# Warmup Iteration  13: 440.193 ops/s
+# Warmup Iteration  14: 444.668 ops/s
+# Warmup Iteration  15: 445.634 ops/s
+# Warmup Iteration  16: 437.933 ops/s
+# Warmup Iteration  17: 0.349 ops/s
+# Warmup Iteration  18: 432.966 ops/s
+# Warmup Iteration  19: 442.336 ops/s
+# Warmup Iteration  20: 439.462 ops/s
+Iteration   1: 416.161 ops/s
+Iteration   2: 418.657 ops/s
+Iteration   3: 437.994 ops/s
+Iteration   4: 442.077 ops/s
+Iteration   5: 426.275 ops/s
+Iteration   6: 444.114 ops/s
+Iteration   7: 445.992 ops/s
+Iteration   8: 448.852 ops/s
+Iteration   9: 441.188 ops/s
+Iteration  10: 441.744 ops/s
+Iteration  11: 430.494 ops/s
+Iteration  12: 438.992 ops/s
+Iteration  13: 449.066 ops/s
+Iteration  14: 434.366 ops/s
+Iteration  15: 443.201 ops/s
+Iteration  16: 444.929 ops/s
+Iteration  17: 391.885 ops/s
+Iteration  18: 427.072 ops/s
+Iteration  19: 433.976 ops/s
+Iteration  20: 443.198 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  435.012 ±(99.9%) 11.998 ops/s [Average]
+  (min, avg, max) = (391.885, 435.012, 449.066), stdev = 13.817
+  CI (99.9%): [423.014, 447.009] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 83.33% complete, ETA 00:07:13
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:39:58 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:39:58 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+456.051 ops/s
+# Warmup Iteration   2: 481.958 ops/s
+# Warmup Iteration   3: 481.582 ops/s
+# Warmup Iteration   4: 483.826 ops/s
+# Warmup Iteration   5: 484.221 ops/s
+# Warmup Iteration   6: 486.794 ops/s
+# Warmup Iteration   7: 480.509 ops/s
+# Warmup Iteration   8: 490.143 ops/s
+# Warmup Iteration   9: 485.576 ops/s
+# Warmup Iteration  10: 482.275 ops/s
+# Warmup Iteration  11: 489.629 ops/s
+# Warmup Iteration  12: 492.532 ops/s
+# Warmup Iteration  13: 492.152 ops/s
+# Warmup Iteration  14: 488.002 ops/s
+# Warmup Iteration  15: 474.390 ops/s
+# Warmup Iteration  16: 469.797 ops/s
+# Warmup Iteration  17: 494.997 ops/s
+# Warmup Iteration  18: 468.425 ops/s
+# Warmup Iteration  19: 483.386 ops/s
+# Warmup Iteration  20: 472.404 ops/s
+Iteration   1: 484.777 ops/s
+Iteration   2: 497.180 ops/s
+Iteration   3: 485.623 ops/s
+Iteration   4: 479.740 ops/s
+Iteration   5: 491.913 ops/s
+Iteration   6: 482.961 ops/s
+Iteration   7: 486.505 ops/s
+Iteration   8: 474.807 ops/s
+Iteration   9: 442.595 ops/s
+Iteration  10: 494.398 ops/s
+Iteration  11: 487.184 ops/s
+Iteration  12: 454.799 ops/s
+Iteration  13: 482.929 ops/s
+Iteration  14: 489.364 ops/s
+Iteration  15: 487.300 ops/s
+Iteration  16: 492.908 ops/s
+Iteration  17: 496.078 ops/s
+Iteration  18: 488.536 ops/s
+Iteration  19: 468.802 ops/s
+Iteration  20: 493.294 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  483.085 ±(99.9%) 11.990 ops/s [Average]
+  (min, avg, max) = (442.595, 483.085, 497.180), stdev = 13.807
+  CI (99.9%): [471.095, 495.074] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 85.42% complete, ETA 00:06:18
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:40:47 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:40:47 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+448.202 ops/s
+# Warmup Iteration   2: 446.318 ops/s
+# Warmup Iteration   3: 459.703 ops/s
+# Warmup Iteration   4: 446.087 ops/s
+# Warmup Iteration   5: 462.106 ops/s
+# Warmup Iteration   6: 459.816 ops/s
+# Warmup Iteration   7: 464.687 ops/s
+# Warmup Iteration   8: 458.970 ops/s
+# Warmup Iteration   9: 470.211 ops/s
+# Warmup Iteration  10: 460.947 ops/s
+# Warmup Iteration  11: 463.100 ops/s
+# Warmup Iteration  12: 469.053 ops/s
+# Warmup Iteration  13: 468.336 ops/s
+# Warmup Iteration  14: 459.099 ops/s
+# Warmup Iteration  15: 469.237 ops/s
+# Warmup Iteration  16: 460.206 ops/s
+# Warmup Iteration  17: 458.958 ops/s
+# Warmup Iteration  18: 446.381 ops/s
+# Warmup Iteration  19: 461.932 ops/s
+# Warmup Iteration  20: 454.870 ops/s
+Iteration   1: 461.994 ops/s
+Iteration   2: 472.413 ops/s
+Iteration   3: 466.908 ops/s
+Iteration   4: 461.430 ops/s
+Iteration   5: 457.020 ops/s
+Iteration   6: 442.901 ops/s
+Iteration   7: 451.136 ops/s
+Iteration   8: 463.069 ops/s
+Iteration   9: 477.028 ops/s
+Iteration  10: 461.363 ops/s
+Iteration  11: 464.084 ops/s
+Iteration  12: 460.087 ops/s
+Iteration  13: 470.670 ops/s
+Iteration  14: 468.223 ops/s
+Iteration  15: 459.623 ops/s
+Iteration  16: 467.882 ops/s
+Iteration  17: 452.265 ops/s
+Iteration  18: 469.796 ops/s
+Iteration  19: 461.654 ops/s
+Iteration  20: 476.304 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  463.293 ±(99.9%) 7.338 ops/s [Average]
+  (min, avg, max) = (442.901, 463.293, 477.028), stdev = 8.451
+  CI (99.9%): [455.954, 470.631] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 87.50% complete, ETA 00:05:23
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:41:37 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:41:37 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+413.289 ops/s
+# Warmup Iteration   2: 415.849 ops/s
+# Warmup Iteration   3: 421.481 ops/s
+# Warmup Iteration   4: 417.721 ops/s
+# Warmup Iteration   5: 413.473 ops/s
+# Warmup Iteration   6: 415.207 ops/s
+# Warmup Iteration   7: 412.906 ops/s
+# Warmup Iteration   8: 416.183 ops/s
+# Warmup Iteration   9: 409.222 ops/s
+# Warmup Iteration  10: 412.800 ops/s
+# Warmup Iteration  11: 412.670 ops/s
+# Warmup Iteration  12: 397.982 ops/s
+# Warmup Iteration  13: 387.704 ops/s
+# Warmup Iteration  14: 401.462 ops/s
+# Warmup Iteration  15: 402.083 ops/s
+# Warmup Iteration  16: 402.278 ops/s
+# Warmup Iteration  17: 323.894 ops/s
+# Warmup Iteration  18: 402.045 ops/s
+# Warmup Iteration  19: 402.023 ops/s
+# Warmup Iteration  20: 404.484 ops/s
+Iteration   1: 405.335 ops/s
+Iteration   2: 409.390 ops/s
+Iteration   3: 412.965 ops/s
+Iteration   4: 381.463 ops/s
+Iteration   5: 407.901 ops/s
+Iteration   6: 414.143 ops/s
+Iteration   7: 409.359 ops/s
+Iteration   8: 407.986 ops/s
+Iteration   9: 386.782 ops/s
+Iteration  10: 387.716 ops/s
+Iteration  11: 389.370 ops/s
+Iteration  12: 356.512 ops/s
+Iteration  13: 388.307 ops/s
+Iteration  14: 390.866 ops/s
+Iteration  15: 12.839 ops/s
+Iteration  16: 394.731 ops/s
+Iteration  17: 368.377 ops/s
+Iteration  18: 359.704 ops/s
+Iteration  19: 128.726 ops/s
+Iteration  20: 46.490 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  342.948 ±(99.9%) 107.206 ops/s [Average]
+  (min, avg, max) = (12.839, 342.948, 414.143), stdev = 123.458
+  CI (99.9%): [235.742, 450.154] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = true, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 89.58% complete, ETA 00:04:33
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:43:00 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:43:01 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+391.984 ops/s
+# Warmup Iteration   2: 373.769 ops/s
+# Warmup Iteration   3: 391.782 ops/s
+# Warmup Iteration   4: 389.517 ops/s
+# Warmup Iteration   5: 389.990 ops/s
+# Warmup Iteration   6: 371.305 ops/s
+# Warmup Iteration   7: 387.046 ops/s
+# Warmup Iteration   8: 384.581 ops/s
+# Warmup Iteration   9: 389.669 ops/s
+# Warmup Iteration  10: 377.115 ops/s
+# Warmup Iteration  11: 385.767 ops/s
+# Warmup Iteration  12: 340.087 ops/s
+# Warmup Iteration  13: 386.798 ops/s
+# Warmup Iteration  14: 385.688 ops/s
+# Warmup Iteration  15: 384.182 ops/s
+# Warmup Iteration  16: 388.619 ops/s
+# Warmup Iteration  17: 351.144 ops/s
+# Warmup Iteration  18: 368.296 ops/s
+# Warmup Iteration  19: 375.439 ops/s
+# Warmup Iteration  20: 372.182 ops/s
+Iteration   1: 371.489 ops/s
+Iteration   2: 374.383 ops/s
+Iteration   3: 375.213 ops/s
+Iteration   4: 377.817 ops/s
+Iteration   5: 378.822 ops/s
+Iteration   6: 371.515 ops/s
+Iteration   7: 364.615 ops/s
+Iteration   8: 369.865 ops/s
+Iteration   9: 377.265 ops/s
+Iteration  10: 378.432 ops/s
+Iteration  11: 375.510 ops/s
+Iteration  12: 372.036 ops/s
+Iteration  13: 231.810 ops/s
+Iteration  14: 177.416 ops/s
+Iteration  15: 94.895 ops/s
+Iteration  16: 146.175 ops/s
+Iteration  17: 44.248 ops/s
+Iteration  18: <forked VM failed with exit code 137>
+<stdout last='20 lines'>
+</stdout>
+<stderr last='20 lines'>
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+</stderr>
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 89.58% complete, ETA 00:04:33
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:44:19 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:44:19 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+558.442 ops/s
+# Warmup Iteration   2: 566.181 ops/s
+# Warmup Iteration   3: 596.197 ops/s
+# Warmup Iteration   4: 606.165 ops/s
+# Warmup Iteration   5: 587.634 ops/s
+# Warmup Iteration   6: 594.746 ops/s
+# Warmup Iteration   7: 591.710 ops/s
+# Warmup Iteration   8: 595.946 ops/s
+# Warmup Iteration   9: 581.964 ops/s
+# Warmup Iteration  10: 587.645 ops/s
+# Warmup Iteration  11: 583.788 ops/s
+# Warmup Iteration  12: 579.079 ops/s
+# Warmup Iteration  13: 591.577 ops/s
+# Warmup Iteration  14: 594.315 ops/s
+# Warmup Iteration  15: 590.970 ops/s
+# Warmup Iteration  16: 582.196 ops/s
+# Warmup Iteration  17: 592.838 ops/s
+# Warmup Iteration  18: 585.541 ops/s
+# Warmup Iteration  19: 585.076 ops/s
+# Warmup Iteration  20: 599.804 ops/s
+Iteration   1: 585.706 ops/s
+Iteration   2: 596.349 ops/s
+Iteration   3: 578.307 ops/s
+Iteration   4: 593.183 ops/s
+Iteration   5: 597.095 ops/s
+Iteration   6: 597.398 ops/s
+Iteration   7: 574.215 ops/s
+Iteration   8: 580.071 ops/s
+Iteration   9: 594.410 ops/s
+Iteration  10: 599.787 ops/s
+Iteration  11: 589.616 ops/s
+Iteration  12: 594.503 ops/s
+Iteration  13: 601.934 ops/s
+Iteration  14: 588.783 ops/s
+Iteration  15: 594.797 ops/s
+Iteration  16: 584.074 ops/s
+Iteration  17: 589.825 ops/s
+Iteration  18: 589.454 ops/s
+Iteration  19: 601.226 ops/s
+Iteration  20: 594.225 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  591.248 ±(99.9%) 6.635 ops/s [Average]
+  (min, avg, max) = (574.215, 591.248, 601.934), stdev = 7.640
+  CI (99.9%): [584.613, 597.882] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = SINGLE, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 91.67% complete, ETA 00:03:45
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:45:08 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:45:08 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+527.101 ops/s
+# Warmup Iteration   2: 541.843 ops/s
+# Warmup Iteration   3: 540.523 ops/s
+# Warmup Iteration   4: 554.420 ops/s
+# Warmup Iteration   5: 553.078 ops/s
+# Warmup Iteration   6: 557.650 ops/s
+# Warmup Iteration   7: 571.884 ops/s
+# Warmup Iteration   8: 550.297 ops/s
+# Warmup Iteration   9: 566.915 ops/s
+# Warmup Iteration  10: 557.238 ops/s
+# Warmup Iteration  11: 577.287 ops/s
+# Warmup Iteration  12: 569.368 ops/s
+# Warmup Iteration  13: 577.283 ops/s
+# Warmup Iteration  14: 562.342 ops/s
+# Warmup Iteration  15: 572.707 ops/s
+# Warmup Iteration  16: 568.393 ops/s
+# Warmup Iteration  17: 559.204 ops/s
+# Warmup Iteration  18: 559.710 ops/s
+# Warmup Iteration  19: 565.978 ops/s
+# Warmup Iteration  20: 560.439 ops/s
+Iteration   1: 565.136 ops/s
+Iteration   2: 554.748 ops/s
+Iteration   3: 572.651 ops/s
+Iteration   4: 541.996 ops/s
+Iteration   5: 572.746 ops/s
+Iteration   6: 565.360 ops/s
+Iteration   7: 559.988 ops/s
+Iteration   8: 550.228 ops/s
+Iteration   9: 577.355 ops/s
+Iteration  10: 570.092 ops/s
+Iteration  11: 568.701 ops/s
+Iteration  12: 558.957 ops/s
+Iteration  13: 550.609 ops/s
+Iteration  14: 562.406 ops/s
+Iteration  15: 569.209 ops/s
+Iteration  16: 561.479 ops/s
+Iteration  17: 564.991 ops/s
+Iteration  18: 555.835 ops/s
+Iteration  19: 556.999 ops/s
+Iteration  20: 558.080 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  561.878 ±(99.9%) 7.638 ops/s [Average]
+  (min, avg, max) = (541.996, 561.878, 577.355), stdev = 8.796
+  CI (99.9%): [554.240, 569.516] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = true, valueObjectSize = 1000)
+
+# Run progress: 93.75% complete, ETA 00:02:48
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:45:56 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:45:56 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+447.685 ops/s
+# Warmup Iteration   2: 446.665 ops/s
+# Warmup Iteration   3: 468.722 ops/s
+# Warmup Iteration   4: 464.220 ops/s
+# Warmup Iteration   5: 440.253 ops/s
+# Warmup Iteration   6: 474.041 ops/s
+# Warmup Iteration   7: 466.037 ops/s
+# Warmup Iteration   8: 471.595 ops/s
+# Warmup Iteration   9: 258.655 ops/s
+# Warmup Iteration  10: 474.980 ops/s
+# Warmup Iteration  11: 478.399 ops/s
+# Warmup Iteration  12: 473.514 ops/s
+# Warmup Iteration  13: 475.289 ops/s
+# Warmup Iteration  14: 471.584 ops/s
+# Warmup Iteration  15: 480.045 ops/s
+# Warmup Iteration  16: 471.496 ops/s
+# Warmup Iteration  17: 139.765 ops/s
+# Warmup Iteration  18: 474.320 ops/s
+# Warmup Iteration  19: 455.947 ops/s
+# Warmup Iteration  20: 468.753 ops/s
+Iteration   1: 476.410 ops/s
+Iteration   2: 478.305 ops/s
+Iteration   3: 477.282 ops/s
+Iteration   4: 428.714 ops/s
+Iteration   5: 287.484 ops/s
+Iteration   6: 456.449 ops/s
+Iteration   7: 460.264 ops/s
+Iteration   8: 454.584 ops/s
+Iteration   9: 478.627 ops/s
+Iteration  10: 474.936 ops/s
+Iteration  11: 476.049 ops/s
+Iteration  12: 470.252 ops/s
+Iteration  13: 481.880 ops/s
+Iteration  14: 460.277 ops/s
+Iteration  15: 470.946 ops/s
+Iteration  16: 464.535 ops/s
+Iteration  17: 242.757 ops/s
+Iteration  18: 477.445 ops/s
+Iteration  19: 474.377 ops/s
+Iteration  20: 481.516 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  448.654 ±(99.9%) 55.933 ops/s [Average]
+  (min, avg, max) = (242.757, 448.654, 481.880), stdev = 64.413
+  CI (99.9%): [392.721, 504.588] (assumes normal distribution)
+
+
+# JMH version: 1.20
+# VM version: JDK 1.8.0_222, VM 25.222-b10
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el7_6.x86_64/jre/bin/java
+# VM options: -Xmx4G -Xms4G -XX:+HeapDumpOnOutOfMemoryError -XX:+AlwaysPreTouch -Xss512k -XX:HeapDumpPath=/tmp/java_heap -XX:+UseLargePages -XX:LargePageSizeInBytes=2m
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch
+# Parameters: (batchSize = 100, distinctEntries = 250000, distinctValues = 100, keyObjectSize = 32, segmented = false, storeType = ROCKS, useStrings = false, valueObjectSize = 1000)
+
+# Run progress: 95.83% complete, ETA 00:01:52
+# Fork: 1 of 1
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+# Warmup Iteration   1: Sep 09, 2019 11:46:47 AM org.infinispan.factories.GlobalComponentRegistry preStart
+INFO: ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0-SNAPSHOT
+Sep 09, 2019 11:46:47 AM org.infinispan.marshall.persistence.impl.PersistenceMarshallerImpl start
+INFO: ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.JavaSerializationMarshaller'
+434.149 ops/s
+# Warmup Iteration   2: 416.727 ops/s
+# Warmup Iteration   3: 424.168 ops/s
+# Warmup Iteration   4: 397.326 ops/s
+# Warmup Iteration   5: 427.314 ops/s
+# Warmup Iteration   6: 425.853 ops/s
+# Warmup Iteration   7: 428.425 ops/s
+# Warmup Iteration   8: 439.816 ops/s
+# Warmup Iteration   9: 375.764 ops/s
+# Warmup Iteration  10: 439.319 ops/s
+# Warmup Iteration  11: 431.325 ops/s
+# Warmup Iteration  12: 411.920 ops/s
+# Warmup Iteration  13: 375.451 ops/s
+# Warmup Iteration  14: 430.976 ops/s
+# Warmup Iteration  15: 443.381 ops/s
+# Warmup Iteration  16: 440.593 ops/s
+# Warmup Iteration  17: 435.598 ops/s
+# Warmup Iteration  18: 188.912 ops/s
+# Warmup Iteration  19: 445.033 ops/s
+# Warmup Iteration  20: 257.889 ops/s
+Iteration   1: 427.907 ops/s
+Iteration   2: 428.853 ops/s
+Iteration   3: 432.611 ops/s
+Iteration   4: 388.826 ops/s
+Iteration   5: 451.972 ops/s
+Iteration   6: 432.783 ops/s
+Iteration   7: 441.129 ops/s
+Iteration   8: 325.242 ops/s
+Iteration   9: 437.514 ops/s
+Iteration  10: 377.564 ops/s
+Iteration  11: 426.614 ops/s
+Iteration  12: 444.506 ops/s
+Iteration  13: 442.664 ops/s
+Iteration  14: 243.826 ops/s
+Iteration  15: 434.976 ops/s
+Iteration  16: 440.783 ops/s
+Iteration  17: 424.890 ops/s
+Iteration  18: 426.849 ops/s
+Iteration  19: 437.433 ops/s
+Iteration  20: 418.465 ops/s
+
+
+Result "org.infinispan.jmhbenchmarks.JMHBenchmarks.testWriteBatch":
+  414.270 ±(99.9%) 42.987 ops/s [Average]
+  (min, avg, max) = (243.826, 414.270, 451.972), stdev = 49.504
+  CI (99.9%): [371.283, 457.257] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:43:48
+
+Benchmark                     (batchSize)  (distinctEntries)  (distinctValues)  (keyObjectSize)  (segmented)  (storeType)  (useStrings)  (valueObjectSize)   Mode  Cnt          Score         Error  Units
+JMHBenchmarks.testLoad                100              50000               100               32         true       SINGLE          true               1000  thrpt   20  141395973.287 ± 1492785.711  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32         true       SINGLE         false               1000  thrpt   20  142075366.952 ± 1326557.777  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32         true        ROCKS          true               1000  thrpt   20  142876231.531 ± 1298163.532  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32         true        ROCKS         false               1000  thrpt   20  143116533.060 ± 1172678.911  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32        false       SINGLE          true               1000  thrpt   20  142563218.197 ± 1302904.937  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32        false       SINGLE         false               1000  thrpt   20  143656641.034 ±  848106.596  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32        false        ROCKS          true               1000  thrpt   20  140430732.057 ± 1011984.941  ops/s
+JMHBenchmarks.testLoad                100              50000               100               32        false        ROCKS         false               1000  thrpt   20  142113666.215 ± 1421724.474  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32         true       SINGLE          true               1000  thrpt   20  140909295.656 ± 1133508.782  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32         true       SINGLE         false               1000  thrpt   20   85218686.358 ±  604187.117  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32         true        ROCKS          true               1000  thrpt   20  141450059.434 ± 1451254.514  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32         true        ROCKS         false               1000  thrpt   20  139828783.081 ± 1155294.523  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32        false       SINGLE          true               1000  thrpt   20  140304049.643 ± 1288409.992  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32        false       SINGLE         false               1000  thrpt   20  141714656.270 ±  963549.448  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32        false        ROCKS          true               1000  thrpt   20  142544007.605 ± 1247476.376  ops/s
+JMHBenchmarks.testLoad                100             250000               100               32        false        ROCKS         false               1000  thrpt   20  143235127.582 ± 1155018.414  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32         true       SINGLE          true               1000  thrpt   20      52512.725 ±    1748.201  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32         true       SINGLE         false               1000  thrpt   20      51861.207 ±    1735.653  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32         true        ROCKS          true               1000  thrpt   20      33226.785 ±    1156.770  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32         true        ROCKS         false               1000  thrpt   20      31227.271 ±     648.785  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32        false       SINGLE          true               1000  thrpt   20      61750.280 ±    1132.763  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32        false       SINGLE         false               1000  thrpt   20      58449.326 ±    1936.858  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32        false        ROCKS          true               1000  thrpt   20      38446.578 ±     623.805  ops/s
+JMHBenchmarks.testWrite               100              50000               100               32        false        ROCKS         false               1000  thrpt   20      35611.483 ±    1094.005  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32         true       SINGLE          true               1000  thrpt   20      51350.505 ±    1181.791  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32         true       SINGLE         false               1000  thrpt   20      50310.171 ±    1973.519  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32         true        ROCKS          true               1000  thrpt   20      33627.873 ±     825.262  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32         true        ROCKS         false               1000  thrpt   20      28635.239 ±    3906.766  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32        false       SINGLE          true               1000  thrpt   20      60040.624 ±    1357.501  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32        false       SINGLE         false               1000  thrpt   20      58710.168 ±     803.748  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32        false        ROCKS          true               1000  thrpt   20      36345.412 ±    5230.399  ops/s
+JMHBenchmarks.testWrite               100             250000               100               32        false        ROCKS         false               1000  thrpt   20      34690.000 ±    2854.170  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32         true       SINGLE          true               1000  thrpt   20        494.054 ±      12.055  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32         true       SINGLE         false               1000  thrpt   20        468.094 ±       7.471  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32         true        ROCKS          true               1000  thrpt   20        398.453 ±       7.404  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32         true        ROCKS         false               1000  thrpt   20        350.005 ±      69.404  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32        false       SINGLE          true               1000  thrpt   20        610.435 ±      11.483  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32        false       SINGLE         false               1000  thrpt   20        580.326 ±       4.388  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32        false        ROCKS          true               1000  thrpt   20        436.092 ±      93.238  ops/s
+JMHBenchmarks.testWriteBatch          100              50000               100               32        false        ROCKS         false               1000  thrpt   20        435.012 ±      11.998  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32         true       SINGLE          true               1000  thrpt   20        483.085 ±      11.990  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32         true       SINGLE         false               1000  thrpt   20        463.293 ±       7.338  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32         true        ROCKS          true               1000  thrpt   20        342.948 ±     107.206  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32        false       SINGLE          true               1000  thrpt   20        591.248 ±       6.635  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32        false       SINGLE         false               1000  thrpt   20        561.878 ±       7.638  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32        false        ROCKS          true               1000  thrpt   20        448.654 ±      55.933  ops/s
+JMHBenchmarks.testWriteBatch          100             250000               100               32        false        ROCKS         false               1000  thrpt   20        414.270 ±      42.987  ops/s
