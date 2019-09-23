@@ -17,6 +17,8 @@ import org.infinispan.manager.EmbeddedCacheManager;
 import org.infinispan.marshall.persistence.impl.MarshalledEntryUtil;
 import org.infinispan.persistence.spi.AdvancedLoadWriteStore;
 import org.infinispan.persistence.spi.MarshallableEntry;
+import org.infinispan.protostream.SerializationContextInitializer;
+import org.infinispan.protostream.annotations.AutoProtoSchemaBuilder;
 import org.infinispan.test.TestingUtil;
 import org.infinispan.test.fwk.TestInternalCacheEntryFactory;
 import org.infinispan.util.concurrent.CompletionStages;
@@ -54,8 +56,9 @@ public class InfinispanHolder {
 				.segmented(segmented)
 				// Make sure runs between don't leak into each other
 				.purgeOnStartup(true);
-		cacheManager = new DefaultCacheManager(new GlobalConfigurationBuilder().nonClusteredDefault().defaultCacheName("default").build(),
-				builder.build());
+		GlobalConfigurationBuilder globalBuilder = new GlobalConfigurationBuilder().nonClusteredDefault().defaultCacheName("default");
+		globalBuilder.serialization().addContextInitializer(SCI.INSTANCE);
+		cacheManager = new DefaultCacheManager(globalBuilder.build(), builder.build());
 		cache = cacheManager.getCache();
 
 		marshaller = TestingUtil.extractPersistenceMarshaller(cacheManager);
@@ -104,5 +107,14 @@ public class InfinispanHolder {
 	public void shutdownState() {
 		cache.stop();
 		storeType.tearDown();
+	}
+
+	@AutoProtoSchemaBuilder(
+			includeClasses = KeySequenceGenerator.ValueWrapper.class,
+			schemaFileName = "benchmark.proto",
+			schemaFilePath = "proto/",
+			schemaPackageName = "org.infinispan.benchmarks")
+	public interface SCI extends SerializationContextInitializer {
+		SCI INSTANCE = new SCIImpl();
 	}
 }

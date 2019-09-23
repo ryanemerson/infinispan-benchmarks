@@ -1,10 +1,11 @@
 package org.infinispan.jmhbenchmarks;
 
-import java.io.Serializable;
 import java.util.Arrays;
 
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.random.RandomDataGenerator;
+import org.infinispan.protostream.annotations.ProtoFactory;
+import org.infinispan.protostream.annotations.ProtoField;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -85,16 +86,18 @@ public class KeySequenceGenerator {
 		}
 	}
 
-	private static final class ValueWrapper implements Serializable {
+	public static final class ValueWrapper {
 
-		private final byte[] bytes;
-		private final int hashCode;
+		@ProtoField(number = 1)
+		final byte[] bytes;
+		final int hashCode;
 
-		public ValueWrapper(String nextHexString) {
+		ValueWrapper(String nextHexString) {
 			this(nextHexString.getBytes());
 		}
 
-		protected ValueWrapper(byte[] bytes) {
+		@ProtoFactory
+		ValueWrapper(byte[] bytes) {
 			this.bytes = bytes;
 			this.hashCode = Arrays.hashCode(bytes);
 		}
@@ -113,6 +116,5 @@ public class KeySequenceGenerator {
 			else
 				return false;
 		}
-
 	}
 }

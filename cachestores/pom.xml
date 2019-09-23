@@ -17,8 +17,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.20</jmh.version>
         <javac.target>1.8</javac.target>
+        <javax.annotation.version>1.3.1</javax.annotation.version>
         <uberjar.name>benchmarks</uberjar.name>
         <infinispan.version>10.0.0-SNAPSHOT</infinispan.version>
+        <protostream.version>4.3.0.Alpha11</protostream.version>
     </properties>
 
     <dependencies>
@@ -52,6 +54,21 @@
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-persistence-soft-index</artifactId>
             <version>${infinispan.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.infinispan.protostream</groupId>
+            <artifactId>protostream</artifactId>
+            <version>${protostream.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.infinispan.protostream</groupId>
+            <artifactId>protostream-processor</artifactId>
+            <version>${protostream.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation.version}</version>
         </dependency>
         <dependency>
             <groupId>org.infinispan</groupId>
