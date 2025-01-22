@@ -45,11 +45,23 @@ THE POSSIBILITY OF SUCH DAMAGE.
 
         <jmh.version>1.35</jmh.version>
 
-        <javac.target>11</javac.target>
+        <javac.target>21</javac.target>
 
         <uberjar.name>benchmarks</uberjar.name>
-        <infinispan.version>15.1.0-SNAPSHOT</infinispan.version>
+        <infinispan.version>15.2.0-SNAPSHOT</infinispan.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.infinispan</groupId>
+                <artifactId>infinispan-bom</artifactId>
+                <version>${infinispan.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
    <dependencies>
         <dependency>
@@ -63,11 +75,10 @@ THE POSSIBILITY OF SUCH DAMAGE.
             <version>${jmh.version}</version>
             <scope>provided</scope>
         </dependency>
-                <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-core</artifactId>
-            <version>${infinispan.version}</version>
-        </dependency>
+       <dependency>
+           <groupId>org.infinispan.protostream</groupId>
+           <artifactId>protostream-processor</artifactId>
+       </dependency>
        <dependency>
            <groupId>org.infinispan</groupId>
            <artifactId>infinispan-core</artifactId>
@@ -75,21 +86,26 @@ THE POSSIBILITY OF SUCH DAMAGE.
            <type>test-jar</type>
        </dependency>
        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-core</artifactId>
+        </dependency>
+       <dependency>
+           <groupId>org.infinispan</groupId>
+           <artifactId>infinispan-remote-query-server</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.infinispan</groupId>
+           <artifactId>infinispan-server-hotrod</artifactId>
+       </dependency>
+       <dependency>
+           <groupId>org.infinispan</groupId>
+           <artifactId>infinispan-client-hotrod</artifactId>
+       </dependency>
+       <dependency>
            <groupId>org.testng</groupId>
            <artifactId>testng</artifactId>
            <version>7.7.0</version>
        </dependency>
-
-       <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-server-hotrod</artifactId>
-            <version>${infinispan.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-client-hotrod</artifactId>
-            <version>${infinispan.version}</version>
-        </dependency>
     </dependencies>
 
 

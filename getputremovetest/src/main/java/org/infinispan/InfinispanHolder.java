@@ -37,7 +37,7 @@ import org.openjdk.jmh.annotations.TearDown;
 @State(Scope.Benchmark)
 public class InfinispanHolder {
 
-	@Param("1")
+	@Param("2")
 	private int nodes;
 
 	@Param("false")
