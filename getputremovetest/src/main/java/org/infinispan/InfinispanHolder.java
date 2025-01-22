@@ -37,7 +37,7 @@ import org.openjdk.jmh.annotations.TearDown;
 @State(Scope.Benchmark)
 public class InfinispanHolder {
 
-	@Param("1")
+	@Param("2")
 	private int nodes;
 
 	@Param("false")
@@ -84,8 +84,9 @@ public class InfinispanHolder {
 			configurationBuilder.clustering().hash().consistentHashFactory(createCH(nodes)).numSegments(nodes);
 			configurationBuilder.clustering().cacheMode(CacheMode.DIST_SYNC);
 			// This is only using a local cache for now
-			DefaultCacheManager mgr = new DefaultCacheManager(new GlobalConfigurationBuilder().clusteredDefault().defaultCacheName("default").build(),
-					configurationBuilder.build(), false);
+			GlobalConfigurationBuilder globalConfigurationBuilder = new GlobalConfigurationBuilder().clusteredDefault().defaultCacheName("default");
+			globalConfigurationBuilder.serialization().addContextInitializers(ControlledConsistentHashFactory.SCI.INSTANCE, new BenchmarkInitializerImpl());
+			DefaultCacheManager mgr = new DefaultCacheManager(globalConfigurationBuilder.build(), configurationBuilder.build(), false);
 			GlobalComponentRegistry gcr = GlobalComponentRegistry.of(mgr);
 			BasicComponentRegistry gbcr = gcr.getComponent(BasicComponentRegistry.class);
 			gbcr.replaceComponent(KnownComponentNames.NON_BLOCKING_EXECUTOR, nonBlockingTaskAwareExecutorService, true);
