@@ -25,7 +25,7 @@ public class KeySequenceGenerator {
 
 	private static final int randomSeed = 17;
 	public static final int keySpaceSize = 1000;
-	private static final int keyObjectSize = 10;
+	private static final int keyObjectSize = 100;
 	private static final int valueSpaceSize = 100;
 	private static final int valueObjectSize = 1000;
 
