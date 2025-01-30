@@ -9,7 +9,7 @@ import org.infinispan.commons.io.ByteBufferImpl;
 /**
  * Array backed, expandable {@link ObjectOutput} implementation.
  */
-final class BytesObjectOutputMain implements ObjectOutput {
+final class BytesObjectOutputMain implements ObjectOutput, StringWriter {
 
    byte bytes[];
    int pos;

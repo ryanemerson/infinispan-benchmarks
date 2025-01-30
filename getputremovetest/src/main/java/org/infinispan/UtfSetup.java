@@ -1,8 +1,9 @@
 package org.infinispan;
 
-import java.io.DataOutput;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.infinispan.commons.io.LazyByteArrayOutputStream;
+import org.infinispan.protostream.impl.ByteArrayOutputStreamEx;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -19,23 +20,29 @@ public class UtfSetup {
    @Param({"1", "8", "32", "128", "315", "518", "1285", "3218", "8321", "78832", "3213967"})
    int stringLength;
 
-   @Param({"new", "main"})
+   @Param({"new", "main", "proto"})
    String type;
 
    @Param({"true", "false"})
    boolean useMultiByte;
 
-   DataOutput dataOutput;
+   StringWriter strWriter;
    String string;
 
    @Setup
    public void setup() {
       switch (type) {
          case "new":
-            dataOutput = new BytesObjectOutputNew(initialArraySize, initialPosition);
+            strWriter = new BytesObjectOutputNew(initialArraySize, initialPosition);
             break;
          case "main":
-            dataOutput = new BytesObjectOutputMain(initialArraySize, initialPosition);
+            strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
+            break;
+         case "proto-lazy":
+            strWriter = new TagWriter(initialPosition, new LazyByteArrayOutputStream(initialArraySize));
+            break;
+         case "proto-ex":
+            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
             break;
          default:
             throw new IllegalStateException();
@@ -55,12 +62,16 @@ public class UtfSetup {
    public void reset() {
       switch (type) {
          case "new":
-            assert useMultiByte || ((BytesObjectOutputNew) dataOutput).pos == initialPosition + stringLength;
-            ((BytesObjectOutputNew) dataOutput).pos = initialPosition;
+            assert useMultiByte || ((BytesObjectOutputNew) strWriter).pos == initialPosition + stringLength;
+            ((BytesObjectOutputNew) strWriter).pos = initialPosition;
             break;
          case "main":
-            assert useMultiByte || ((BytesObjectOutputMain) dataOutput).pos == initialPosition + stringLength;
-            ((BytesObjectOutputMain) dataOutput).pos = initialPosition;
+            assert useMultiByte || ((BytesObjectOutputMain) strWriter).pos == initialPosition + stringLength;
+            ((BytesObjectOutputMain) strWriter).pos = initialPosition;
+            break;
+         case "proto-lazy":
+         case "proto-ex":
+            ((TagWriter) strWriter).out.setPosition(initialPosition);
             break;
          default:
             throw new IllegalStateException();

@@ -8,7 +8,7 @@ import org.infinispan.commons.io.ByteBufferImpl;
 /**
  * Array backed, expandable {@link ObjectOutput} implementation.
  */
-final class BytesObjectOutputNew implements ObjectOutput {
+final class BytesObjectOutputNew implements ObjectOutput, StringWriter {
 
    byte bytes[];
    int pos;
