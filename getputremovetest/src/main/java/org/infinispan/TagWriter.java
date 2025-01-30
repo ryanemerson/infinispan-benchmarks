@@ -6,10 +6,12 @@ import java.io.OutputStream;
 import org.infinispan.protostream.ImmutableSerializationContext;
 import org.infinispan.protostream.LazyByteArrayOutputStream;
 import org.infinispan.protostream.ProtobufUtil;
-import org.infinispan.protostream.impl.ByteArrayOutputStreamEx;
+import org.infinispan.protostream.SerializationContext;
 import org.infinispan.protostream.impl.TagWriterImpl;
 
 public class TagWriter implements StringWriter {
+
+   static final SerializationContext SERIALIZATION_CONTEXT = ProtobufUtil.newSerializationContext();
 
    TagWriterImpl writer;
    LazyByteArrayOutputStream out;
@@ -17,8 +19,7 @@ public class TagWriter implements StringWriter {
    TagWriter(int pos, LazyByteArrayOutputStream out) {
       this.out = out;
       out.setPosition(pos);
-      ImmutableSerializationContext ctx = ProtobufUtil.newSerializationContext();
-      writer = TagWriterImpl.newInstance(ctx, (OutputStream) out);
+      writer = TagWriterImpl.newInstance(SERIALIZATION_CONTEXT, (OutputStream) out);
    }
 
    @Override

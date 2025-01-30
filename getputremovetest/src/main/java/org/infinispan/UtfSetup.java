@@ -63,15 +63,17 @@ public class UtfSetup {
       switch (type) {
          case "new":
             assert useMultiByte || ((BytesObjectOutputNew) strWriter).pos == initialPosition + stringLength;
-            ((BytesObjectOutputNew) strWriter).pos = initialPosition;
+            strWriter = new BytesObjectOutputNew(initialArraySize, initialPosition);
             break;
          case "main":
             assert useMultiByte || ((BytesObjectOutputMain) strWriter).pos == initialPosition + stringLength;
-            ((BytesObjectOutputMain) strWriter).pos = initialPosition;
+            strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
+            strWriter = new TagWriter(initialPosition, new LazyByteArrayOutputStream(initialArraySize));
+            break;
          case "proto-ex":
-            ((TagWriter) strWriter).out.setPosition(initialPosition);
+            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
             break;
          default:
             throw new IllegalStateException();
