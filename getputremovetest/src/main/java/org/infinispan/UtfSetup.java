@@ -1,9 +1,9 @@
 package org.infinispan;
 
+import java.io.IOException;
 import java.util.concurrent.ThreadLocalRandom;
 
 import org.infinispan.commons.io.LazyByteArrayOutputStream;
-import org.infinispan.protostream.impl.ByteArrayOutputStreamEx;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -29,6 +29,11 @@ public class UtfSetup {
    StringWriter strWriter;
    String string;
 
+   public static void main(String[] args) throws IOException {
+      StringWriter stringWriter = new TagWriter(0, new LazyByteArrayOutputStream(64));
+      stringWriter.writeUTF("Some test");
+   }
+
    @Setup
    public void setup() {
       switch (type) {
@@ -38,12 +43,12 @@ public class UtfSetup {
          case "main":
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
-         case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new LazyByteArrayOutputStream(initialArraySize));
-            break;
-         case "proto-ex":
-            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
-            break;
+//         case "proto-lazy":
+//            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.LazyByteArrayOutputStream(initialArraySize));
+//            break;
+//         case "proto-ex":
+//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+//            break;
          default:
             throw new IllegalStateException();
       }
@@ -69,12 +74,12 @@ public class UtfSetup {
             assert useMultiByte || ((BytesObjectOutputMain) strWriter).pos == initialPosition + stringLength;
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
-         case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new LazyByteArrayOutputStream(initialArraySize));
-            break;
-         case "proto-ex":
-            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
-            break;
+//         case "proto-lazy":
+//            strWriter = new TagWriter(initialPosition, new LazyByteArrayOutputStream(initialArraySize));
+//            break;
+//         case "proto-ex":
+//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+//            break;
          default:
             throw new IllegalStateException();
       }
