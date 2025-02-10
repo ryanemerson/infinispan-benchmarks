@@ -37,7 +37,7 @@ public class UtfSetup {
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.LazyByteArrayOutputStream(initialArraySize));
+            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RawByteArrayOutputStreamImpl(initialArraySize));
             break;
 //         case "proto-ex":
 //            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
@@ -68,7 +68,7 @@ public class UtfSetup {
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.LazyByteArrayOutputStream(initialArraySize));
+            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RawByteArrayOutputStreamImpl(initialArraySize));
             break;
 //         case "proto-ex":
 //            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
