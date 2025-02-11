@@ -2,6 +2,7 @@ package org.infinispan;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.infinispan.protostream.impl.ByteArrayOutputStreamEx;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -18,7 +19,7 @@ public class UtfSetup {
    @Param({"1", "8", "32", "128", "315", "518", "1285", "3218", "8321", "78832", "3213967"})
    int stringLength;
 
-   @Param({"new", "main", "proto"})
+   @Param({"proto-lazy", "proto-ex"})
    String type;
 
    @Param({"true", "false"})
@@ -37,11 +38,11 @@ public class UtfSetup {
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RawByteArrayOutputStreamImpl(initialArraySize));
+            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RandomAccessOutputStreamImpl(initialArraySize));
             break;
-//         case "proto-ex":
-//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
-//            break;
+         case "proto-ex":
+            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+            break;
          default:
             throw new IllegalStateException();
       }
@@ -68,11 +69,11 @@ public class UtfSetup {
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RawByteArrayOutputStreamImpl(initialArraySize));
+            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RandomAccessOutputStreamImpl(initialArraySize));
             break;
-//         case "proto-ex":
-//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
-//            break;
+         case "proto-ex":
+            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+            break;
          default:
             throw new IllegalStateException();
       }
