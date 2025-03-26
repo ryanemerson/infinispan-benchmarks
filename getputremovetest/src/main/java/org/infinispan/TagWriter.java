@@ -1,7 +1,6 @@
 package org.infinispan;
 
 import java.io.IOException;
-import java.io.OutputStream;
 
 import org.infinispan.protostream.ProtobufUtil;
 import org.infinispan.protostream.RandomAccessOutputStream;
@@ -13,16 +12,11 @@ public class TagWriter implements StringWriter {
    static final SerializationContext SERIALIZATION_CONTEXT = ProtobufUtil.newSerializationContext();
 
    TagWriterImpl writer;
-   OutputStream out;
+   RandomAccessOutputStream out;
 
-   TagWriter(int pos, OutputStream out) {
+   TagWriter(int pos, RandomAccessOutputStream out) {
       this.out = out;
-//      out.setPosition(pos);
-      if (out instanceof RandomAccessOutputStream ra) {
-         writer = TagWriterImpl.newInstance(SERIALIZATION_CONTEXT, ra);
-      } else {
-         writer = TagWriterImpl.newInstance(SERIALIZATION_CONTEXT, out);
-      }
+      this.writer = TagWriterImpl.newInstance(SERIALIZATION_CONTEXT, out);
    }
 
    @Override

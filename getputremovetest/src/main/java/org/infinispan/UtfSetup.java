@@ -2,7 +2,7 @@ package org.infinispan;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.infinispan.protostream.impl.ByteArrayOutputStreamEx;
+import org.infinispan.protostream.impl.TagWriterImpl;
 import org.openjdk.jmh.annotations.Param;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
@@ -19,7 +19,7 @@ public class UtfSetup {
    @Param({"1", "8", "32", "128", "315", "518", "1285", "3218", "8321", "78832", "3213967"})
    int stringLength;
 
-   @Param({"proto-lazy", "proto-ex"})
+   @Param({"proto-lazy", "proto-coder"})
    String type;
 
    @Param({"true", "false"})
@@ -38,11 +38,16 @@ public class UtfSetup {
             strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
             break;
          case "proto-lazy":
+            TagWriterImpl.CODER_OPTIMISATION = false;
             strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RandomAccessOutputStreamImpl(initialArraySize));
             break;
-         case "proto-ex":
-            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+         case "proto-coder":
+            TagWriterImpl.CODER_OPTIMISATION = true;
+            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RandomAccessOutputStreamImpl(initialArraySize));
             break;
+//         case "proto-ex":
+//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+//            break;
          default:
             throw new IllegalStateException();
       }
@@ -62,18 +67,19 @@ public class UtfSetup {
       switch (type) {
          case "new":
             assert useMultiByte || ((BytesObjectOutputNew) strWriter).pos == initialPosition + stringLength;
-            strWriter = new BytesObjectOutputNew(initialArraySize, initialPosition);
+            ((BytesObjectOutputNew) strWriter).pos = 0;
             break;
          case "main":
             assert useMultiByte || ((BytesObjectOutputMain) strWriter).pos == initialPosition + stringLength;
-            strWriter = new BytesObjectOutputMain(initialArraySize, initialPosition);
+            ((BytesObjectOutputMain) strWriter).pos = 0;
             break;
          case "proto-lazy":
-            strWriter = new TagWriter(initialPosition, new org.infinispan.protostream.impl.RandomAccessOutputStreamImpl(initialArraySize));
+         case "proto-coder":
+            ((TagWriter) strWriter).out.setPosition(0);
             break;
-         case "proto-ex":
-            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
-            break;
+//         case "proto-ex":
+//            strWriter = new TagWriter(initialPosition, new ByteArrayOutputStreamEx(initialArraySize));
+//            break;
          default:
             throw new IllegalStateException();
       }
